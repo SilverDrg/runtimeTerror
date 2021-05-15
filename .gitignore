@@ -1,3 +1,25 @@
 
-#Dependencies
-/FrontEnd/node_modules
+#API Dependencies
+/FrontEnd/API/node_modules
+
+#React Dependencies
+/FrontEnd/react_frontend/node_modules
+/FrontEnd/react_frontend/.pnp
+/FrontEnd/react_frontend/.pnp.js
+
+# testing
+/FrontEnd/react_frontend/coverage
+
+# production
+/FrontEnd/react_frontend/build
+
+# misc
+/FrontEnd/react_frontend/.DS_Store
+/FrontEnd/react_frontend/.env.local
+/FrontEnd/react_frontend/.env.development.local
+/FrontEnd/react_frontend/.env.test.local
+/FrontEnd/react_frontend/.env.production.local
+
+/FrontEnd/react_frontend/npm-debug.log*
+/FrontEnd/react_frontend/yarn-debug.log*
+/FrontEnd/react_frontend/yarn-error.log*
