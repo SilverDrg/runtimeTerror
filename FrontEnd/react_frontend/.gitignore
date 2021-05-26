@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#private credentials
+src/soul.json
+
 # testing
 /coverage
 
