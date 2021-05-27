@@ -12,3 +12,7 @@ export { default as Button } from "./addon-components/Button";
 
 //Map components
 export { default as Map } from "./map-components/Map"; 
+
+//Data components
+export { default as Images } from "./data-components/Images";
+export { default as Image } from "./data-components/Image";

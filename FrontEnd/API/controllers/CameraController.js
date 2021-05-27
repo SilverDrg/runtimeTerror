@@ -21,7 +21,7 @@ module.exports = {
             }
             var data = [];
             data.cameras = Cameras
-            return res.render('camera/displayCamera', data);
+            return res.json(Cameras);
         });
     },
 

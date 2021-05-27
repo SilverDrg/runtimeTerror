@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Title, Navigation, Footer, Home } from "./components"
 import { AboutUs } from "./components"
+import { Images } from "./components"
 import { Map } from "./components"
 
 function App() {
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path="/map" exact>
             <Map/> 
+          </Route>
+          <Route path="/images" exact>
+            <Images/> 
           </Route>
           <Route path="/aboutus" exact>
             <AboutUs/> 

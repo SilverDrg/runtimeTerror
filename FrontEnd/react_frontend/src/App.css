@@ -2,11 +2,11 @@
 
 html, body, #root, .App {
   height: 100%;
+  font-family: 'Roboto';
 }
 
 .App {
   text-align: center;
-  font-family: 'Roboto';
 }
 
 .App-logo {
