@@ -1,53 +1,32 @@
 import React from "react"
-import { compose, withProps } from "recompose"
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
-import config from "../../soul.json"
+import { MapContainer, TileLayer, Marker, Popup, Circle, CircleMarker, Polyline, Polygon, Rectangle } from 'react-leaflet'
+import stopsign from '../../resources/stop_sign.png'
+import sign90 from '../../resources/90_sign.png'
 
-const MyMapComponent = compose(
-  withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=" + config.Google.maps + "&v=3.exp&libraries=geometry,drawing,places",
-    loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `700px` }} />,
-    mapElement: <div style={{ height: `100%` }} />,
-  }),
-  withScriptjs,
-  withGoogleMap
-)((props) =>
-  <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: 46.5575, lng: 15.645556 }}
-  >
-    {props.isMarkerShown && <Marker position={{ lat: 46.5575, lng: 15.645556 }} onClick={props.onMarkerClick} />}
-  </GoogleMap>
-)
+const center = [46.5575, 15.645556]
+const sign90location = [46.5654, 15.623756]
 
-class Map extends React.PureComponent {
-  state = {
-    isMarkerShown: false,
-  }
+const fillBlueOptions = { fillColor: 'blue' }
 
-  componentDidMount() {
-    this.delayedShowMarker()
-  }
-
-  delayedShowMarker = () => {
-    setTimeout(() => {
-      this.setState({ isMarkerShown: true })
-    }, 3000)
-  }
-
-  handleMarkerClick = () => {
-    this.setState({ isMarkerShown: false })
-    this.delayedShowMarker()
-  }
-
+class Map extends React.Component {
   render() {
     return (
-      <MyMapComponent
-        isMarkerShown={this.state.isMarkerShown}
-        onMarkerClick={this.handleMarkerClick}
-      />
-    )
+      <div>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css'></link>
+        <MapContainer style={{ height: "700px" }}  center={center} zoom={15} scrollWheelZoom={false}>
+          <TileLayer
+            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <CircleMarker center={center} pathOptions={fillBlueOptions} radius={10}>
+            <Popup><img src={stopsign} alt="Stop sign" style={{height: "48px", width: "48px"}}></img></Popup>
+          </CircleMarker>
+          <CircleMarker center={sign90location} pathOptions={fillBlueOptions} radius={10}>
+            <Popup><img src={sign90} alt="Stop sign" style={{height: "48px", width: "48px"}}></img></Popup>
+          </CircleMarker>
+        </MapContainer>
+      </div>
+    ) 
   }
 }
 

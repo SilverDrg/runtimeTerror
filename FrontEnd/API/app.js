@@ -14,10 +14,11 @@ db.on('error', console.error.bind(console, 'MongoDB connection error'));
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var carsRouter = require('./routes/CarsRoutes');
+var cameraRouter = require('./routes/CameraRoutes');
 var gpsRouter = require('./routes/GPSRoutes');
 var licensePlateRouter = require('./routes/LicensePlateRoutes');
-var trafficSignRouter = require('./routes/trafficSignRoutes');
-var cameraRouter = require('./routes/CameraRoutes');
+var trafficSignRouter = require('./routes/TrafficSignRoutes');
+var trafficSignImagesRouter = require('./routes/TrafficSignImagesRoutes');
 
 var app = express();
 
@@ -34,10 +35,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/cars', carsRouter);
+app.use('/camera', cameraRouter);
 app.use('/gps', gpsRouter);
 app.use('/licenseplates', licensePlateRouter);
 app.use('/trafficsign', trafficSignRouter);
-app.use('/camera', cameraRouter);
+app.use('trafficsignimages', trafficSignImagesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

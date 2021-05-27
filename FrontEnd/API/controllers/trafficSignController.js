@@ -1,4 +1,5 @@
-var TrafficsignModel = require('../models/trafficSignModel.js');
+var TrafficsignModel = require('../models/TrafficSignModel.js');
+var TrafficsignimagesModel = require('../models/TrafficSignImagesModel.js');
 
 /**
  * trafficSignController.js
@@ -11,7 +12,7 @@ module.exports = {
      * trafficSignController.list()
      */
     list: function (req, res) {
-        TrafficsignModel.find().populate('location').exec(function (err, trafficSigns) {
+        TrafficsignModel.find().populate('location').populate('image').exec(function (err, trafficSigns) {
             if (err) {
                 return res.status(500).json({
                     message: 'Error when getting trafficSign.',
@@ -58,18 +59,37 @@ module.exports = {
     create: function (req, res) {
         var trafficSign = new TrafficsignModel({
 			symbol : req.body.symbol,
-			location : req.body.location
+			location : req.body.location,
+            image : ""
         });
 
-        trafficSign.save(function (err, trafficSign) {
+        TrafficsignimagesModel.findOne({name: trafficSign.symbol}, function (err, TrafficSignImages) {
             if (err) {
                 return res.status(500).json({
-                    message: 'Error when creating trafficSign',
+                    message: 'Error when getting TrafficSignImages.',
                     error: err
                 });
             }
 
-            return res.status(201).json(trafficSign);
+            if (!TrafficSignImages) {
+                return res.status(404).json({
+                    message: 'No such TrafficSignImages'
+                });
+            }
+
+            trafficSign.image = TrafficSignImages._id;
+
+            trafficSign.save(function (err, trafficSign) {
+                if (err) {
+                    return res.status(500).json({
+                        message: 'Error when creating trafficSign',
+                        error: err
+                    });
+                }
+    
+                return res.status(201).json(trafficSign);
+            });
+
         });
     },
 

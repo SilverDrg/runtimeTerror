@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var trafficSignController = require('../controllers/trafficSignController.js');
+var trafficSignController = require('../controllers/TrafficSignController.js');
 
 /*
  * GET
