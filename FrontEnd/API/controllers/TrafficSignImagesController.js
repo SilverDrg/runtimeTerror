@@ -23,6 +23,10 @@ module.exports = {
         });
     },
 
+    displayAdd: function(req, res) {
+        return res.render('trafficsignimages/addTrafficSignImages');
+    },
+
     /**
      * TrafficSignImagesController.show()
      */
@@ -51,9 +55,10 @@ module.exports = {
      * TrafficSignImagesController.create()
      */
     create: function (req, res) {
+        console.log(req.file);
         var TrafficSignImages = new TrafficsignimagesModel({
 			name : req.body.name,
-			path : req.body.path
+			path : 'images/' + req.file.filename,
         });
 
         TrafficSignImages.save(function (err, TrafficSignImages) {

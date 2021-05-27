@@ -2,11 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Title, Navigation, Footer, Home } from "./components"
+import { AboutUs } from "./components"
 import { Map } from "./components"
 
 function App() {
   return (
-    <div className="App bg-secondary pb-5">
+    <div className="App bg-secondary pb-5 h-100">
       <Router>
         <Title />
         <Navigation />
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route path="/map" exact>
             <Map/> 
+          </Route>
+          <Route path="/aboutus" exact>
+            <AboutUs/> 
           </Route>
         </Switch>
         <Footer />

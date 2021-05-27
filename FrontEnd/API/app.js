@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var cors = require('cors');
 
 var mongoose = require('mongoose');
 var mongoDB = 'mongodb://127.0.0.1/projektnaNaloga';
@@ -22,6 +23,19 @@ var trafficSignImagesRouter = require('./routes/TrafficSignImagesRoutes');
 
 var app = express();
 
+var allowedOrigins = ['http://localhost:3000', 'http://localhost:3001'];
+app.use(cors({
+  credentials: true,
+  origin: function(origin, callback) {
+    if(!origin) return callback(null, true);
+    if(allowedOrigins.indexOf(origin) === -1) {
+      var msg = 'The CORS policy for this site does not allow access from the specified origin';
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  }
+}))
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -39,7 +53,7 @@ app.use('/camera', cameraRouter);
 app.use('/gps', gpsRouter);
 app.use('/licenseplates', licensePlateRouter);
 app.use('/trafficsign', trafficSignRouter);
-app.use('trafficsignimages', trafficSignImagesRouter);
+app.use('/trafficsignimages', trafficSignImagesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -13,7 +13,7 @@ class Map extends React.Component {
     return (
       <div>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css'></link>
-        <MapContainer style={{ height: "700px" }}  center={center} zoom={15} scrollWheelZoom={false}>
+        <MapContainer style={{ height: "740px" }}  center={center} zoom={15} scrollWheelZoom={false}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
