@@ -21,7 +21,7 @@ module.exports = {
             }
             var data = [];
             data.cameras = Cameras
-            return res.json(Cameras);
+            return res.status(201).json(Cameras);
         });
     },
 
@@ -49,7 +49,7 @@ module.exports = {
                 });
             }
 
-            return res.json(Camera);
+            return res.status(201).json(Camera);
         });
     },
 
@@ -58,7 +58,7 @@ module.exports = {
      */
     create: function (req, res) {
         var Camera = new CameraModel({
-			src : req.body.src
+			src : 'images/'+req.file.filename
         });
 
         Camera.save(function (err, Camera) {
@@ -68,6 +68,9 @@ module.exports = {
                     error: err
                 });
             }
+
+            //const spawn = require("child_process").spawn;
+            //const pythonProcess = spawn('python',["../../../Backend", arg1, arg2]);
 
             return res.status(201).json(Camera);
         });

@@ -18,9 +18,9 @@ module.exports = {
                     error: err
                 });
             }
-            var data = [];
-            data.GPS = GPSs
-            return res.render('gps/displayGPS', data);
+            // var data = [];
+            // data.GPS = GPSs
+            return res.status(201).json(GPSs);
         });
     },
 

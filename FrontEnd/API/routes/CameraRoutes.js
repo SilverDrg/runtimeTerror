@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var CameraController = require('../controllers/CameraController.js');
+var multer = require('multer');
+var upload = multer({dest: 'public/images/'});
 
 /*
  * GET
@@ -21,7 +23,7 @@ router.post('/', CameraController.create);
 /*
  * PUT
  */
-router.put('/:id', CameraController.update);
+router.put('/:id', upload.single('image'), CameraController.update);
 
 /*
  * DELETE

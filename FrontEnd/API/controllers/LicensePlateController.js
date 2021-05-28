@@ -18,9 +18,9 @@ module.exports = {
                     error: err
                 });
             }
-            var data = [];
-            data.licenseplates = LicensePlates
-            return res.render('licenseplate/displayLicensePlate', data);
+            // var data = [];
+            // data.licenseplates = LicensePlates
+            return res.status(201).json(LicensePlates);
         });
     },
 

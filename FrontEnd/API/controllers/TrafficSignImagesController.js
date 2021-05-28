@@ -19,7 +19,7 @@ module.exports = {
                 });
             }
 
-            return res.json(TrafficSignImagess);
+            return res.status(201).json(TrafficSignImagess);
         });
     },
 

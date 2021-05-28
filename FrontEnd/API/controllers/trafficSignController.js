@@ -19,9 +19,9 @@ module.exports = {
                     error: err
                 });
             }
-            var data = [];
-            data.trafficsigns = trafficSigns;
-            return res.render('trafficsign/displayTrafficSign', data);
+            // var data = [];
+            // data.trafficsigns = trafficSigns;
+            return res.status(201).json(trafficSigns);
         });
     },
 

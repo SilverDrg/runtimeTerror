@@ -5,7 +5,7 @@ import background from '../../resources/background.jpg'
 
 function Home(props) {
     return(
-        <div className="text-center mx-auto px-0 w-100 col">
+        <div className="text-center mx-auto pb-5 px-0 w-100 bg-secondary">
             <Image className="mx-auto" alt="Background_image" src={background} fluid/>
             <div className="container bg-dark mx-auto my-3 py-2 col-sm-10 rounded text-light">
                 <h3>Runtime Terror</h3>
@@ -32,6 +32,20 @@ function Home(props) {
                     Ut placerat orci nulla pellentesque. 
                     Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. 
                     Sed elementum tempus egestas sed sed risus pretium quam vulputate.
+                    <br></br>
+                    <br></br>
+                    Ac turpis egestas integer eget aliquet nibh praesent tristique magna. 
+                    Cras ornare arcu dui vivamus arcu felis bibendum. 
+                    In vitae turpis massa sed elementum. 
+                    Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Nunc scelerisque viverra mauris in. 
+                    Morbi enim nunc faucibus a pellentesque sit amet. 
+                    Est ante in nibh mauris cursus mattis molestie a iaculis. 
+                    Nunc congue nisi vitae suscipit tellus mauris a. 
+                    Gravida dictum fusce ut placerat orci. 
+                    Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. 
+                    Magna fringilla urna porttitor rhoncus dolor purus non enim praesent. 
+                    Dignissim sodales ut eu sem integer vitae. 
+                    Sed risus ultricies tristique nulla aliquet enim tortor.
                 </p>
             </div>
         </div>

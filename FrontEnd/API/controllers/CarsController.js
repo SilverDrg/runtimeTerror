@@ -19,9 +19,9 @@ module.exports = {
                 });
             }
 
-            var data = [];
-            data.cars = Cars;
-            return res.render('car/displayCars', data);
+            // var data = [];
+            // data.cars = Cars;
+            return res.status(201).json(Cars);
         });
     },
 
