@@ -12,6 +12,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.lifecycle.LifecycleOwner;
 
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Matrix;
 import android.os.Bundle;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     Switch sw1;
     //Button btn;
     ImageButton btn;
+    OkHttp newHttp;
     final Handler handler = new Handler();
 
 
@@ -129,12 +131,21 @@ public class MainActivity extends AppCompatActivity {
                     public void onImageSaved(@NonNull File file) {
                         String msg = "Pic captured at " + file.getAbsolutePath();
                         Toast.makeText(getBaseContext(), msg,Toast.LENGTH_LONG).show();
+                        Context context = getApplicationContext();
+                        newHttp = new OkHttp(context);
+                        newHttp.addFile("Img", "/storage/self/primary/DCIM/CameraX/", imageFileName+".jpg");
+                        newHttp.execute("http://192.168.115.117:3001/camera");
+
                     }
 
                     @Override
                     public void onError(@NonNull ImageCapture.UseCaseError useCaseError, @NonNull String message, @Nullable Throwable cause) {
                         String msg = "Pic capture failed : " + message;
                         Toast.makeText(getBaseContext(), msg,Toast.LENGTH_LONG).show();
+                        Context context = getApplicationContext();
+                        newHttp = new OkHttp(context);
+                        newHttp.addFile("Img", "/storage/self/primary/DCIM/CameraX/", imageFileName+".jpg");
+                        newHttp.execute("http://192.168.115.117:3001/camera");
                         if(cause != null){
                             cause.printStackTrace();
                         }
