@@ -1,6 +1,6 @@
 import React from "react"
 import { MapContainer, TileLayer } from 'react-leaflet'
-import { MarkerTrafficSign } from '../../components'
+import { MarkerTrafficSigns, MarkerCars } from '../../components'
 
 const center = [46.5575, 15.645556]
 
@@ -12,37 +12,7 @@ const center = [46.5575, 15.645556]
           </CircleMarker> */
 
 class Map extends React.Component { 
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: true,
-      trafficsigns: [],
-    };
-  }
-  async componentDidMount() {
-    const data = await fetch('http://localhost:3001/trafficsign').then((response) => response.json()).then((data) => {
-      let tmpArray = []
-      for (var i = 0; i < data.length; i++) {
-        tmpArray.push(data[i])
-      };
-      this.setState({ trafficsigns: tmpArray, loading: false });
-      //console.log("tmp array: " + tmpArray);
-    })
-    console.log(data);
-  }
-  /*
-  getMarkerTrafficSigns() {
-    const getTrafficSigns = async function() {
-      const res = await fetch('http://localhost:3001/trafficsign');
-      const data = await res.json();
-      //console.log("TrafficSigns from api: \n" + data);
-      this.setState({trafficsigns: data})
-    };
-
-    getTrafficSigns();
-  }
-  */
-  render() {
+    render() {
     //console.log(this.state.trafficsigns);
     return (
       <div>
@@ -52,10 +22,8 @@ class Map extends React.Component {
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          { 
-            this.state.trafficsigns.map((trafficSign) => (
-            <MarkerTrafficSign key={trafficSign._id} trafficSign={trafficSign}/>))
-          }
+          <MarkerCars/>
+          <MarkerTrafficSigns/>          
         </MapContainer>
       </div>
     ) 

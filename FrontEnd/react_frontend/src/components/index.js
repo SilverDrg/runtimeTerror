@@ -12,8 +12,10 @@ export { default as Button } from "./addon-components/Button";
 
 //Map components
 export { default as Map } from "./map-components/Map";
+export { default as MarkerTrafficSigns } from "./map-components/MarkerTrafficSigns";
 export { default as MarkerTrafficSign } from "./map-components/MarkerTrafficSign"; 
-export { default as TrafficSigns } from "./map-components/TrafficSigns";
+export { default as MarkerCars } from "./map-components/MarkerCars";
+export { default as MarkerCar } from "./map-components/MarkerCar";
 
 //Data components
 export { default as Images } from "./data-components/Images";
