@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { withRouter } from "react-router-dom";
 import Image from 'react-bootstrap/Image';
 import background from '../../resources/background.jpg'

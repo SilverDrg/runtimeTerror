@@ -11,7 +11,9 @@ export { default as AboutUs } from "./static-components/AboutUs";
 export { default as Button } from "./addon-components/Button";
 
 //Map components
-export { default as Map } from "./map-components/Map"; 
+export { default as Map } from "./map-components/Map";
+export { default as MarkerTrafficSign } from "./map-components/MarkerTrafficSign"; 
+export { default as TrafficSigns } from "./map-components/TrafficSigns";
 
 //Data components
 export { default as Images } from "./data-components/Images";
