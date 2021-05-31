@@ -26,8 +26,9 @@ class Map extends React.Component {
         tmpArray.push(data[i])
       };
       this.setState({ trafficsigns: tmpArray, loading: false });
-      console.log("tmp array: " + tmpArray);
+      //console.log("tmp array: " + tmpArray);
     })
+    console.log(data);
   }
   /*
   getMarkerTrafficSigns() {
@@ -42,8 +43,7 @@ class Map extends React.Component {
   }
   */
   render() {
-    console.log(this.state.trafficsigns);
-
+    //console.log(this.state.trafficsigns);
     return (
       <div>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css'></link>

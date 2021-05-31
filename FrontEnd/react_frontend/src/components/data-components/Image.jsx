@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 
 function Image(props) {
     console.log('image id: ' + props.image._id);
