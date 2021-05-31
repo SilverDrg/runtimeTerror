@@ -21,6 +21,7 @@ module.exports = {
             }
             // var data = [];
             // data.trafficsigns = trafficSigns;
+            console.log(trafficSigns);
             return res.status(201).json(trafficSigns);
         });
     },
