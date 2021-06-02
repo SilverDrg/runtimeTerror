@@ -34,6 +34,8 @@ function AboutUs() {
                         <hr></hr>
                         <CardContent>
                             <Typography>
+                                University of Maribor <br></br> 
+                                Faculty of Electrical Engineering and Computer Science <br></br><hr></hr>
                                 Student
                             </Typography>
                         </CardContent>
@@ -46,6 +48,8 @@ function AboutUs() {
                         <hr></hr>
                         <CardContent>
                             <Typography>
+                                University of Maribor <br></br> 
+                                Faculty of Electrical Engineering and Computer Science <br></br><hr></hr>
                                 Student
                             </Typography>
                         </CardContent>
@@ -58,6 +62,8 @@ function AboutUs() {
                         <hr></hr>
                         <CardContent>
                             <Typography>
+                                University of Maribor <br></br> 
+                                Faculty of Electrical Engineering and Computer Science <br></br><hr></hr>
                                 Student
                             </Typography>
                         </CardContent>

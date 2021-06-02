@@ -33,6 +33,7 @@ import android.widget.Toast;
 import com.example.camera.R;
 
 import java.io.File;
+import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton btn;
     OkHttp newHttp;
     final Handler handler = new Handler();
+    public static String API_URL = "http://10.9.0.13:3001/";
 
 
     @Override
@@ -132,9 +134,12 @@ public class MainActivity extends AppCompatActivity {
                         String msg = "Pic captured at " + file.getAbsolutePath();
                         Toast.makeText(getBaseContext(), msg,Toast.LENGTH_LONG).show();
                         Context context = getApplicationContext();
-                        newHttp = new OkHttp(context);
-                        newHttp.addFile("Img", "/storage/self/primary/DCIM/CameraX/", imageFileName+".jpg");
-                        newHttp.execute("http://192.168.115.117:3001/camera");
+                        newHttp = new OkHttp();
+                        try {
+                            newHttp.doPostRequestFile(API_URL + "camera", file);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
 
                     }
 
@@ -143,9 +148,6 @@ public class MainActivity extends AppCompatActivity {
                         String msg = "Pic capture failed : " + message;
                         Toast.makeText(getBaseContext(), msg,Toast.LENGTH_LONG).show();
                         Context context = getApplicationContext();
-                        newHttp = new OkHttp(context);
-                        newHttp.addFile("Img", "/storage/self/primary/DCIM/CameraX/", imageFileName+".jpg");
-                        newHttp.execute("http://192.168.115.117:3001/camera");
                         if(cause != null){
                             cause.printStackTrace();
                         }

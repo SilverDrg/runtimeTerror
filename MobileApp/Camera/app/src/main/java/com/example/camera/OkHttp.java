@@ -1,121 +1,77 @@
 package com.example.camera;
 
-import android.content.Context;
-import android.util.Log;
-
-import org.apache.http.HttpStatus;
+import com.squareup.okhttp.Call;
+import com.squareup.okhttp.Callback;
+import com.squareup.okhttp.Headers;
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.RequestBody;
+import com.squareup.okhttp.Response;
+import com.squareup.okhttp.ResponseBody;
 
 import java.io.File;
 import java.io.IOException;
 
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.RequestBody;
-import okhttp3.Response;
-
 public class OkHttp {
+    private OkHttpClient httpClient = new OkHttpClient();
+    private String responseJson;
+    public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
+    public void doGetRequest(String url) throws IOException {
+        Request request = new Request.Builder()
+                .url(url)
+                .build();
 
-    public Context context;
-    public MultipartBody.Builder multipartBody;
-    public OkHttpClient okHttpClient;
-
-    public OkHttp(Context context)
-    {
-        this.context = context;
-        this.multipartBody = new MultipartBody.Builder();
-        this.multipartBody.setType(MultipartBody.FORM);
-        this.okHttpClient = new OkHttpClient();
-    }
-
-    // Add String
-    public void addString(String name, String value)
-    {
-        this.multipartBody.addFormDataPart(name, value);
-    }
-
-    // Add Image File
-    public void addFile(String name, String filePath, String fileName)
-    {
-        this.multipartBody.addFormDataPart(name, fileName, RequestBody.create(MediaType.parse("image/jpeg"), new File(filePath)));
-    }
-
-    // Add Zip File
-    public void addZipFile(String name, String filePath, String fileName)
-    {
-        this.multipartBody.addFormDataPart(name, fileName, RequestBody.create(MediaType.parse("application/zip"), new File(filePath)));
-    }
-
-    // Execute Url
-    public String execute(String url)
-    {
-        RequestBody requestBody = null;
-        Request request = null;
-        Response response = null;
-        int code = 200;
-        String strResponse = null;
-
-        try
-        {
-            requestBody = this.multipartBody.build();
-            // Set Your Authentication key here.
-            request = new Request.Builder().header("Key", "Value").url(url).post(requestBody).build();
-
-            Log.v("====== REQUEST ======",""+request);
-            response = okHttpClient.newCall(request).execute();
-            Log.v("====== RESPONSE ======",""+response);
-
-            if (!response.isSuccessful())
-                throw new IOException();
-
-            code = response.networkResponse().code();
-
-            /*
-             * "Successful response from server"
-             */
-            if (response.isSuccessful())
-            {
-                strResponse =response.body().string();
+        httpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                e.printStackTrace();
             }
-            /*
-             * "Invalid URL or Server not available, please try again."
-             */
-            else if (code == HttpStatus.SC_NOT_FOUND)
-            {
-                strResponse = "Invalid URL or Server not available, please try again";
-            }
-            /*
-             * "Connection timeout, please try again."
-             */
-            else if (code == HttpStatus.SC_REQUEST_TIMEOUT)
-            {
-                strResponse = "Connection timeout, please try again";
-            }
-            /*
-             * "Invalid URL or Server is not responding, please try again."
-             */
-            else if (code == HttpStatus.SC_SERVICE_UNAVAILABLE)
-            {
-                strResponse = "Invalid URL or Server is not responding, please try again";
-            }
-        }
-        catch (Exception e)
-        {
-            Log.e("Exception", e.getMessage());
-        }
-        finally
-        {
-            requestBody = null;
-            request = null;
-            response = null;
-            multipartBody = null;
-            if (okHttpClient != null)
-                okHttpClient = null;
 
-            System.gc();
-        }
-        return strResponse;
+            @Override
+            public void onResponse(Response response) throws IOException {
+                try (ResponseBody responseBody = response.body()) {
+                    if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
+
+                    Headers responseHeaders = response.headers();
+                    for (int i = 0, size = responseHeaders.size(); i < size; i++) {
+                        System.out.println(responseHeaders.name(i) + ": " + responseHeaders.value(i));
+                    }
+
+                    responseJson = responseBody.string();
+                }
+            }
+        });
     }
 
+    public String getResponseJson(){ return responseJson;  }
+
+    public void doPostRequestFile(String url, File file) throws IOException {
+        final MediaType MEDIA_TYPE_PNG = MediaType.parse("image/png");
+        RequestBody body = RequestBody.create(MEDIA_TYPE_PNG, file);
+        Request request = new Request.Builder()
+                .url(url)
+                .post(body)
+                .build();
+        httpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                e.printStackTrace();
+            }
+
+            @Override
+            public void onResponse(Response response) throws IOException {
+                try (ResponseBody responseBody = response.body()) {
+                    if (!response.isSuccessful()) throw new IOException("Unexpected code " + response);
+
+                    Headers responseHeaders = response.headers();
+                    for (int i = 0, size = responseHeaders.size(); i < size; i++) {
+                        System.out.println(responseHeaders.name(i) + ": " + responseHeaders.value(i));
+                    }
+
+                    //responseJson = responseBody.string();
+                }
+            }
+        });
+    }
 }
