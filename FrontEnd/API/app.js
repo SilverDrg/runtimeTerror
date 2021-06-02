@@ -7,7 +7,7 @@ var cors = require('cors');
 
 var mongoose = require('mongoose');
 var mongoDB = 'mongodb://127.0.0.1/projektnaNaloga';
-mongoose.connect(mongoDB);
+mongoose.connect(mongoDB, {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error'));
@@ -20,6 +20,7 @@ var gpsRouter = require('./routes/GPSRoutes');
 var licensePlateRouter = require('./routes/LicensePlateRoutes');
 var trafficSignRouter = require('./routes/TrafficSignRoutes');
 var trafficSignImagesRouter = require('./routes/TrafficSignImagesRoutes');
+var scraperRouter = require('./routes/Scraper');
 
 var app = express();
 
@@ -54,6 +55,7 @@ app.use('/gps', gpsRouter);
 app.use('/licenseplates', licensePlateRouter);
 app.use('/trafficsign', trafficSignRouter);
 app.use('/trafficsignimages', trafficSignImagesRouter);
+app.use('/scrape', scraperRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

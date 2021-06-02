@@ -18,12 +18,13 @@ router.get('/:id', CameraController.show);
 /*
  * POST
  */
-router.post('/', CameraController.create);
+router.post('/', upload.single('image'), CameraController.create);
+router.post('/cam', CameraController.createCam);
 
 /*
  * PUT
  */
-router.put('/:id', upload.single('image'), CameraController.update);
+router.put('/:id', CameraController.update);
 
 /*
  * DELETE
