@@ -56,6 +56,7 @@ module.exports = {
      * GPSController.create()
      */
     create: function (req, res) {
+        console.log(req.body);
         var GPS = new GpsModel({
 			latitude : req.body.latitude,
 			longditude : req.body.longditude,

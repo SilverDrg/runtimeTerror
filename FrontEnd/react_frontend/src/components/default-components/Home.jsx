@@ -10,7 +10,7 @@ function Home(props) {
                 <h3>Runtime Terror</h3>
                 <hr className="mx-auto col-sm-8"></hr>
                 <p>
-                    This is a web application, that collects data from our mobile application and other web sites with publicly accessible data.
+                    This is a web application. The application collects road data sent to it through the mobile app and other sources with public data.
                 </p>
                 <p className="mx-auto col-sm-10">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 

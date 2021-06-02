@@ -57,6 +57,7 @@ module.exports = {
      * CameraController.create()
      */
     create: function (req, res) {
+        console.log(req.body);
         var Camera = new CameraModel({
 			src : 'images/'+req.file.filename
         });
@@ -69,9 +70,33 @@ module.exports = {
                 });
             }
 
-            //const spawn = require("child_process").spawn;
-            //const pythonProcess = spawn('python',["../../../Backend", arg1, arg2]);
+            // const spawn = require("child_process").spawn;
+            // const pythonProcess = spawn('python',["../../../Backend/ObjectRecognition/cars_detection.py", '--image', Camera.src]);
 
+            // console.log('python result: ' + pythonProcess);
+            return res.status(201).json(Camera);
+        });
+    },
+
+    createCam: function (req, res) {
+        console.log(req.body);
+        var Camera = new CameraModel({
+			src : req.body.filepath
+        });
+
+        Camera.save(function (err, Camera) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when creating Camera',
+                    error: err
+                });
+            }
+
+            const spawn = require("child_process").spawn;
+            const pythonProcess = spawn('python',["../../../Backend/ObjectRecognition/cars_detection.py", '--image', 'http://http://localhost:3001/' + Camera.src]);
+
+            console.log('python result:');
+            console.log(pythonProcess);
             return res.status(201).json(Camera);
         });
     },
