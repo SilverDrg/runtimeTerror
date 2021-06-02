@@ -11,7 +11,11 @@ var CarsSchema = new Schema({
 	'imageSource' : {
 	 	type: Schema.Types.ObjectId,
 	 	ref: 'Camera'
-	}
+	},
+	'license_plate': [{
+			type: Schema.Types.ObjectId,
+			ref: 'LicensePlate'
+	}]
 });
 
 module.exports = mongoose.model('Cars', CarsSchema);

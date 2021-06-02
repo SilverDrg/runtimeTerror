@@ -61,7 +61,8 @@ module.exports = {
 			numberOfCars : req.body.numberOfCars,
 			averageSpeed : req.body.averageSpeed,
 			location : req.body.location,
-			imageSource : req.body.imageSource
+			imageSource : req.body.imageSource,
+            licensePlate: req.body.licensePlate
         });
 
         Cars.save(function (err, Cars) {
@@ -100,6 +101,7 @@ module.exports = {
 			Cars.averageSpeed = req.body.averageSpeed ? req.body.averageSpeed : Cars.averageSpeed;
 			Cars.location = req.body.location ? req.body.location : Cars.location;
 			Cars.imageSource = req.body.imageSource ? req.body.imageSource : Cars.imageSource;
+            Cars.licensePlate = req.body.licensePlate ? req.body.licensePlate : Cars.licensePlate;
 			
             Cars.save(function (err, Cars) {
                 if (err) {
