@@ -1,6 +1,9 @@
 import cv2
 import numpy as np
 import argparse
+import cvlib as cv
+from matplotlib import pyplot as plt
+from cvlib.object_detection import draw_bbox
 
 
 # cap = cv2.VideoCapture('monitor.jpg')
@@ -37,20 +40,30 @@ ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True, help="path to image")
 args = vars(ap.parse_args())
 
-image = cv2.imread(args["image"], 0)
+image = cv2.imread(args["image"])
 
-car_haarcascade = cv2.CascadeClassifier('haar/haarcascade_car.xml')
+bbox, label, conf = cv.detect_common_objects(image)
+#output_image = draw_bbox(image, bbox, label, conf)
+#plt.imshow(output_image)
+#plt.show()
 
-detect_car = car_haarcascade.detectMultiScale(image, 1.1, 9)
-dim=(850,550)
-for(x,y,w,h) in detect_car:
-    plate = image[y : y+h, x:x + w]
-    cv2.rectangle(image, (x,y), (x+w, y+x), (51,51,255), 2)
-    cv2.rectangle(image, (x, y - 40), (x + w, y), (51,51,255), -2)
-    cv2.putText(image, 'Car', (x ,y - 10), cv2.FONT_HERSHEY_SIMPLEX,  0.5, (0,0,255), 2)
-    resized = cv2.resize(image, dim, interpolation = cv2.INTER_AREA)
-    cv2.imshow("Image", resized)
+print(str(label.count('car')))
 
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+
+
+
+#car_haarcascade = cv2.CascadeClassifier('haar/haarcascade_car.xml')
+
+# detect_car = car_haarcascade.detectMultiScale(image, 1.1, 9)
+# dim=(850,550)
+# for(x,y,w,h) in detect_car:
+#     plate = image[y : y+h, x:x + w]
+#     cv2.rectangle(image, (x,y), (x+w, y+x), (51,51,255), 2)
+#     cv2.rectangle(image, (x, y - 40), (x + w, y), (51,51,255), -2)
+#     cv2.putText(image, 'Car', (x ,y - 10), cv2.FONT_HERSHEY_SIMPLEX,  0.5, (0,0,255), 2)
+#     resized = cv2.resize(image, dim, interpolation = cv2.INTER_AREA)
+#     cv2.imshow("Image", resized)
+
+# cv2.waitKey(0)
+# cv2.destroyAllWindows()
 
