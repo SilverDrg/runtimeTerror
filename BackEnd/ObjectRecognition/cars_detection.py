@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 import argparse
 import cvlib as cv
+import sys
+import requests
 from matplotlib import pyplot as plt
 from cvlib.object_detection import draw_bbox
 
@@ -39,16 +41,21 @@ ap = argparse.ArgumentParser()
 # path to image
 ap.add_argument("-i", "--image", required=True, help="path to image")
 args = vars(ap.parse_args())
-
-image = cv2.imread(args["image"])
+resp = requests.get(args["image"], stream=True).raw
+image = np.asarray(bytearray(resp.read()), dtype="uint8")
+image = cv2.imdecode(image, cv2.IMREAD_COLOR)
+#image = cv2.imread(args["image"])
 
 bbox, label, conf = cv.detect_common_objects(image)
 #output_image = draw_bbox(image, bbox, label, conf)
 #plt.imshow(output_image)
 #plt.show()
 
-print(str(label.count('car')))
+#print(str(label.count('car')))
 
+sys.stdout.write(str(label.count('car')))
+sys.stdout.flush()
+sys.exit(0)
 
 
 

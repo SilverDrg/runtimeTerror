@@ -77,6 +77,26 @@ module.exports = {
         });
     },
 
+    createFromImage: function (req, res) {
+        console.log(req);
+        var Cars = new CarsModel({
+			numberOfCars : req.python,
+			averageSpeed : 0,
+			location : req.location_id,
+			imageSource : req.image_id,
+            licensePlate: [ 'N/A' ]
+        });
+
+        Cars.save(function (err, Cars) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when creating Cars',
+                    error: err
+                });
+            }
+        });
+    },
+
     /**
      * CarsController.update()
      */

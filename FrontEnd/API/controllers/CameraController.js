@@ -1,5 +1,6 @@
 const { render } = require('../app.js');
 var CameraModel = require('../models/CameraModel.js');
+var CarsController = require('../controllers/CarsController.js');
 
 /**
  * CameraController.js
@@ -92,11 +93,18 @@ module.exports = {
                 });
             }
 
+            var sendData = [];
+            sendData.image_id = Camera._id;
+            sendData.location_id = req.body.location_id;
             const spawn = require("child_process").spawn;
-            const pythonProcess = spawn('python',["../../../Backend/ObjectRecognition/cars_detection.py", '--image', 'http://http://localhost:3001/' + Camera.src]);
-
-            console.log('python result:');
-            console.log(pythonProcess);
+            const pythonProcess = spawn('python',["../../Backend/ObjectRecognition/cars_detection.py", '--image', 'http://localhost:3001/' + Camera.src]);
+            pythonProcess.stdout.on('data', function (data) {
+                console.log('Pipe data from python script ...');
+                sendData.python = data.toString();
+                console.log('python result:');
+                console.log(sendData.python);
+                CarsController.createFromImage(sendData);
+            });
             return res.status(201).json(Camera);
         });
     },

@@ -38,20 +38,20 @@ async function scraper(){
         console.log('lat and long: ' + latitude + ' ' + longditude);
 
         //Send location data as json
-        // axios.post('http://localhost:3001/gps', {
-        //     'latitude': latitude,
-        //     'longditude': longditude,
-        //     'altitude': 0,
-        //     'speed': 0,
-        //     'accuracy': 0
-        // })
-        // .then(res => {
-        //     console.log(res.data)
-        //     locData = res.data;
-        // })
-        // .catch(error => {
-        //     console.error(error)
-        // });
+        axios.post('http://localhost:3001/gps', {
+            'latitude': latitude,
+            'longditude': longditude,
+            'altitude': 0,
+            'speed': 0,
+            'accuracy': 0
+        })
+        .then(res => {
+            console.log(res.data)
+            locData = res.data;
+        })
+        .catch(error => {
+            console.error(error)
+        });
 
         //path where the image will be stored locally
         var savepath = 'images/' + Date.now() + '.jpg';
@@ -66,7 +66,7 @@ async function scraper(){
         //Send the image path to mongoDB
         axios.post('http://localhost:3001/camera/cam', {
             'filepath': savepath,
-            'location_id': locData._id,
+            'location_id': locData._id
         })
         .catch(error => {
             console.error(error)
