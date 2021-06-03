@@ -14,6 +14,8 @@ function MarkerCar(props) {
     return(
         <CircleMarker center={[car.location.latitude, car.location.longditude]} pathOptions={fillColor} radius={20}>
             <Popup>
+                <p>{car.imageSource.link}</p>
+                <p>{car.location.latitude}, { car.location.longditude}</p>
                 <p>Number of cars seen: <br/> { car.numberOfCars }</p>
                 <p>Average speed: <br/> { car.averageSpeed }</p>
             </Popup>

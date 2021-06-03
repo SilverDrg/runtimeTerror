@@ -1,34 +1,32 @@
-var express = require('express');
-var router = express.Router();
-var cheerio = require("cheerio");
-var axios = require('axios');
+const express = require('express');
+const router = express.Router();
+const cheerio = require("cheerio");
+const axios = require('axios');
 const fs = require('fs');
 const fetch = require('node-fetch');
 require('isomorphic-fetch');
-var url = require('../public/javascripts/sloveniaCams.json');
+const url = require('../public/javascripts/sloveniaCams.json');
 
-function scrapeAll(){
-    return scraper()
- }
-
-async function scraper(){
+async function scrapeAll(){
     for (link in url) {
-        const response = await fetch(url[link])
-        const html = await response.text()
-        const $ = await cheerio.load(html)
+        const response = await fetch(url[link]);
+        const html = await response.text();
+        const $ = await cheerio.load(html);
 
-        //Extracts the traffic camera image
-        const img = $("#webcam-live > img").attr("src");
-        //Extracts the location of the camera
+        // Extracts the traffic camera image
+        const img = $('#webcam-live > img').attr('src');
+
+        // Extracts the location of the camera
         const location = $('li:contains("Lat/Long:")').text();
 
-        //Extract the latitude and longditude from the location string
-        var latitude = location.substr(10, 8).replace(',', '0');
-        var longditude = location.substr(20, 8);
-        var locData = [];
+        // Extract the latitude and longditude from the location string
+        let geolocation = location.match(/\d+(\.\d+)?/gi)
+        let latitude = geolocation[0];
+        let longditude = geolocation[1];
+        let locData = [];
         console.log('lat and long: ' + latitude + ' ' + longditude);
 
-        //Send location data as json
+        // Send location data as json
         axios.post('http://localhost:3001/gps', {
             'latitude': latitude,
             'longditude': longditude,
@@ -44,20 +42,21 @@ async function scraper(){
             console.error(error)
         });
 
-        //path where the image will be stored locally
-        var savepath = 'images/' + Date.now() + '.jpg';
+        // Path where the image will be stored locally
+        let savepath = 'images/' + Date.now() + '.jpg';
 
-        //Fetch image file from url and save it to local directory
+        // Fetch image file from url and save it to local directory
         const fetchResponse = await fetch(img);
         const buffer = await fetchResponse.buffer();
         fs.writeFile('public/'+savepath, buffer, () => {
             console.log('finished downloading! ' + 'public/'+savepath);
         })
 
-        //Send the image path to mongoDB
+        // Send the image path to mongoDB
         axios.post('http://localhost:3001/camera/cam', {
             'filepath': savepath,
-            'location_id': locData._id
+            'location_id': locData._id,
+            'link': url[link]
         }).then(res => {
             console.log("Sent camera path")
         })
@@ -65,13 +64,14 @@ async function scraper(){
             console.error(error)
         });
 
-        await new Promise(resolve => setTimeout(resolve, 5000));
+        //await new Promise(resolve => setTimeout(resolve, 4000)); eat a dick zephy
     }
-    return "Pages were scraped";
+    return 'Pages were scraped';
 }
 
 router.get('/', function(req, res, next) {
-    return res.json(scrapeAll());
+    scrapeAll();
+    res.render('index', { title: 'Express' });
 });
 
 module.exports = router;
