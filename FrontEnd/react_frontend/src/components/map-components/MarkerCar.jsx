@@ -3,9 +3,9 @@ import { Popup, CircleMarker } from 'react-leaflet'
 function MarkerCar(props) {
     var car = props.car;
     var fillColor;
-    if(car.numberOfCars > 2) {
+    if(car.numberOfCars > 4) {
         fillColor = { fillColor: 'red', color: 'red' }
-    } else if (car.numberOfCars < 3 && car.numberOfCars > 1){
+    } else if (car.numberOfCars <= 4 && car.numberOfCars > 2){
         fillColor = { fillColor: 'orange', color: 'orange' }
     } else {
         fillColor = { fillColor: 'green', color: 'green' }

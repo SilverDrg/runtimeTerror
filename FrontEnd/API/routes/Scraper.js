@@ -5,16 +5,7 @@ var axios = require('axios');
 const fs = require('fs');
 const fetch = require('node-fetch');
 require('isomorphic-fetch');
-var url = 
-[   
-    'https://livetraffic.eu/webcams/dars-baza_konjicedevina_lj/',
-    // 'https://livetraffic.eu/webcams/dars-baza_konjicedevina_mb/',
-    // 'https://livetraffic.eu/webcams/dars-baza_konjicedramlje_sd/',
-    // 'https://livetraffic.eu/webcams/dars-baza_konjicefram/',
-    // 'https://livetraffic.eu/webcams/dars-baza_konjicegramoznica_lj/',
-    // 'https://livetraffic.eu/webcams/dars-baza_konjicegramoznica_mb/',
-    // 'https://livetraffic.eu/webcams/dars-baza_konjicesl_bistrica_sd/',
-];
+var url = require('../public/javascripts/sloveniaCams.json');
 
 function scrapeAll(){
     return scraper()
@@ -67,10 +58,14 @@ async function scraper(){
         axios.post('http://localhost:3001/camera/cam', {
             'filepath': savepath,
             'location_id': locData._id
+        }).then(res => {
+            console.log("Sent camera path")
         })
         .catch(error => {
             console.error(error)
         });
+
+        await new Promise(resolve => setTimeout(resolve, 5000));
     }
     return "Pages were scraped";
 }

@@ -11,7 +11,7 @@ module.exports = {
      * CarsController.list()
      */
     list: function (req, res) {
-        CarsModel.find().populate('location').populate('imageSource').exec(function (err, Cars) {
+        CarsModel.find().populate('location').exec(function (err, Cars) {
             if (err) {
                 return res.status(500).json({
                     message: 'Error when getting Cars.',
@@ -21,6 +21,7 @@ module.exports = {
 
             // var data = [];
             // data.cars = Cars;
+            console.log(Cars);
             return res.status(201).json(Cars);
         });
     },
@@ -89,10 +90,7 @@ module.exports = {
 
         Cars.save(function (err, Cars) {
             if (err) {
-                return res.status(500).json({
-                    message: 'Error when creating Cars',
-                    error: err
-                });
+                return err;
             }
         });
     },
