@@ -9,6 +9,7 @@ export { default as AboutUs } from "./static-components/AboutUs";
 
 //Addon components
 export { default as Button } from "./addon-components/Button";
+export { default as Pagination } from "./addon-components/Pagination";
 
 //Map components
 export { default as Map } from "./map-components/Map";

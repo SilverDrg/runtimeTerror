@@ -21,6 +21,7 @@ function doNext() {
         task.resolve(result);
 
         tasks.shift();
+        console.log('Tasks remaining: ' + tasks.length);
         doNext();
     });
 }
