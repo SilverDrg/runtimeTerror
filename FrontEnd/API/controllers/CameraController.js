@@ -96,6 +96,7 @@ module.exports = {
      */
     create: function (req, res) {
         console.log(req.body);
+        console.log(req.file);
         var Camera = new CameraModel({
             src: 'images/' + req.file.filename
         });

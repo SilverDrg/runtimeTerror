@@ -40,13 +40,14 @@ public class MainActivity extends AppCompatActivity {
     private int REQUEST_CODE_PERMISSIONS = 101;
     private String[] REQUIRED_PERMISSIONS = new String[]{"android.permission.CAMERA",
             "android.permission.WRITE_EXTERNAL_STORAGE"};
+    private  String imageFileName;
     TextureView textureView;
     Switch sw1;
     //Button btn;
     ImageButton btn;
     OkHttp newHttp;
     final Handler handler = new Handler();
-    public static String API_URL = "http://10.9.0.13:3001/";
+    public static String API_URL = "http://192.168.94.124:3001/";
 
 
     @Override
@@ -125,9 +126,11 @@ public class MainActivity extends AppCompatActivity {
                 String filepath = Environment.getExternalStorageDirectory().getPath();
                 //File file = new File(filepath + "/DCIM");
                 //File storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
-                String imageFileName = "JPEG_" + System.currentTimeMillis() + "_";
+                imageFileName = "JPEG_" + System.currentTimeMillis() + "_";
                 //File file = File.createTempFile(imageFileName, ".jpg", storageDir);
-                File file = new File("/storage/self/primary/DCIM/CameraX/" + imageFileName + ".jpg");
+                Context context = getApplicationContext();
+                File file = new File(context.getFilesDir() + "/" + imageFileName + ".jpg");
+                Toast.makeText(getBaseContext(), context.getFilesDir() + "/" + imageFileName + ".jpg", Toast.LENGTH_LONG).show();
                 imgCap.takePicture(file, new ImageCapture.OnImageSavedListener() {
                     @Override
                     public void onImageSaved(@NonNull File file) {
@@ -136,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                         Context context = getApplicationContext();
                         newHttp = new OkHttp();
                         try {
-                            newHttp.doPostRequestFile(API_URL + "camera", file);
+                            newHttp.doPostRequestFile(API_URL + "camera", file, imageFileName);
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
