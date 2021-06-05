@@ -143,7 +143,6 @@ public class MainActivity extends AppCompatActivity {
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
-
                     }
 
                     @Override
@@ -158,7 +157,6 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
-
         CameraX.bindToLifecycle((LifecycleOwner)this, preview, imgCap);
     }
 

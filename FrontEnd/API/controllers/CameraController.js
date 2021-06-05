@@ -113,7 +113,30 @@ module.exports = {
             // const pythonProcess = spawn('python',["../../../Backend/ObjectRecognition/cars_detection.py", '--image', Camera.src]);
 
             // console.log('python result: ' + pythonProcess);
-            return res.status(201).json(Camera);
+            return res.json(Camera);
+        });
+    },
+
+    createMobile: function (req, res) {
+        console.log(req.body);
+        console.log(req.file);
+        var Camera = new CameraModel({
+            src: 'images/' + req.file.filename
+        });
+
+        Camera.save(function (err, Camera) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when creating Camera',
+                    error: err
+                });
+            }
+
+            // const spawn = require("child_process").spawn;
+            // const pythonProcess = spawn('python',["../../../Backend/ObjectRecognition/cars_detection.py", '--image', Camera.src]);
+
+            // console.log('python result: ' + pythonProcess);
+            return res.json(Camera);
         });
     },
 

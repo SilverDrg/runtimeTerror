@@ -14,9 +14,25 @@ function MarkerCars(props) {
     }, []);
     console.log(cars);
 
+    function isDefined(car) {
+        if (car.location === undefined || car.location.latitude === undefined || car.location.longditude === undefined) {
+            return false
+        } else {
+            return true
+        }
+    }
+
     return (
         <>
-        { cars.map((car) => (<MarkerCar key={car._id} car={car}/>)) }
+        { cars.map((car => { 
+            if (isDefined(car)) {
+                return <MarkerCar key={car._id} car={car}/> 
+            } else {
+                return '';
+            }
+        }
+        )) 
+        }
         </>
     );
 }
