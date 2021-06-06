@@ -18,6 +18,7 @@ import com.squareup.okhttp.Response;
 import com.squareup.okhttp.ResponseBody;
 
 import org.jetbrains.annotations.NotNull;
+import org.json.JSONObject;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,6 +29,34 @@ public class OkHttp {
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     private static final MediaType MEDIA_TYPE_PNG = MediaType.parse("image/jpg");
     private Context con;
+
+    public void post(String url, JSONObject json) throws IOException {
+        RequestBody body = RequestBody.create(JSON, json.toString()); // new
+        Request request = new Request.Builder()
+                .url(url)
+                .post(body)
+                .build();
+        httpClient.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Request request, IOException e) {
+                e.printStackTrace();
+            }
+
+            @Override
+            public void onResponse(Response response) throws IOException {
+                try (ResponseBody responseBody = response.body()) {
+                    if (!response.isSuccessful())
+                        throw new IOException("Unexpected code " + response);
+
+                    Headers responseHeaders = response.headers();
+                    for (int i = 0, size = responseHeaders.size(); i < size; i++) {
+                        System.out.println(responseHeaders.name(i) + ": " + responseHeaders.value(i));
+                    }
+                }
+            }
+        });
+    }
+
     public void doGetRequest(String url) throws IOException {
         Request request = new Request.Builder()
                 .url(url)
@@ -54,6 +83,8 @@ public class OkHttp {
             }
         });
     }
+
+
 
     public String getResponseJson(){ return responseJson;  }
 
