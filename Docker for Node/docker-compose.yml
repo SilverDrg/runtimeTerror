@@ -9,6 +9,14 @@ services:
       - "3001:3001"
     links:
       - mongo
+  react:
+    image: react_img
+    build: .
+    command: "npm start"
+    ports:
+      - "3000:3000"
+    links:
+      - "app"
   mongo:
     container_name: mongo
     image: mongo
