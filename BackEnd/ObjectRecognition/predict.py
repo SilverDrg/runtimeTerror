@@ -9,6 +9,7 @@ import imutils
 import random
 import cv2
 import os
+import sys
 
 from tensorflow.python.keras.backend import var
 
@@ -49,11 +50,17 @@ label = labelNames[j]
 
 image = cv2.imread(imagePaths) #load the image using openCV 
 image = imutils.resize(image, width=128) #resize the
-cv2.putText(image, label, (5,15), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0,0,255), 2) #draw the label on it
+
+sys.stdout.write(label)
+sys.stdout.flush()
+sys.exit(0)
+
+
+#cv2.putText(image, label, (5,15), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0,0,255), 2) #draw the label on it
 
 # save the image to disk
-p = os.path.sep.join([args["examples"], "{}.png".format(100000)])
-cv2.imwrite(p, image)
+#p = os.path.sep.join([args["examples"], "{}.png".format(100000)])
+#cv2.imwrite(p, image)
 
 # imagePaths = list(paths.list_images(args["images"])) #take the paths to the input images
 # random.shuffle(imagePaths) #shuffle the images
