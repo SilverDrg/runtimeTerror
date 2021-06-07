@@ -18,6 +18,7 @@ import com.squareup.okhttp.Response;
 import com.squareup.okhttp.ResponseBody;
 
 import org.jetbrains.annotations.NotNull;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
@@ -88,12 +89,19 @@ public class OkHttp {
 
     public String getResponseJson(){ return responseJson;  }
 
-    public void doPostRequestFile(String url, File file, String filename) throws IOException {
-        RequestBody requestBody = new MultipartBuilder()
-                .type(MultipartBuilder.FORM)
-                .addFormDataPart("image", filename,
-                        RequestBody.create(MEDIA_TYPE_PNG, file))
-                .build();
+    public void doPostRequestFile(String url, File file, String filename, JSONObject jsonObject) throws IOException {
+        RequestBody requestBody = null;
+        try {
+            requestBody = new MultipartBuilder()
+                    .type(MultipartBuilder.FORM)
+                    .addFormDataPart("image", filename,
+                            RequestBody.create(MEDIA_TYPE_PNG, file))
+                    .addFormDataPart("latitude", jsonObject.getString("latitude"))
+                    .addFormDataPart("longditude", jsonObject.getString("longditude"))
+                    .build();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
         Request request = new Request.Builder()
                 .url(url)
                 .post(requestBody)

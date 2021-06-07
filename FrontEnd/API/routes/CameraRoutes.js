@@ -19,6 +19,7 @@ router.get('/:id', CameraController.show);
  * POST
  */
 router.post('/', upload.single('image'), CameraController.create);
+router.post('/app', upload.single('image'), CameraController.createMobile);
 router.post('/cam', CameraController.createCam);
 
 /*

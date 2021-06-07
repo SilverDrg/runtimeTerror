@@ -4,6 +4,7 @@ import numpy as np
 import pytesseract as tess
 import imutils
 import argparse
+import sys
 
 tess.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
@@ -82,6 +83,9 @@ if([NumberPlateCount] != None):
 
     text = tess.image_to_string(crop_image, lang='eng', config='-c tessedit_char_whitelist=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ --psm 8 --oem 3')
     print(text)
+    sys.stdout.write(str(text))
+    sys.stdout.flush()
+    sys.exit(0)
 
 else:
     print("No license plate detected")

@@ -78,6 +78,23 @@ module.exports = {
         });
     },
 
+    createFromApp: function (req, res) {
+        console.log(req);
+        var Cars = new CarsModel({
+			numberOfCars : req.python,
+			averageSpeed : 0,
+			location : req.location_id,
+			imageSource : req.image_id,
+            licensePlate: [ req.license_plate ]
+        });
+
+        Cars.save(function (err, Cars) {
+            if (err) {
+                return err;
+            }
+        });
+    },
+
     createFromImage: function (req, res) {
         console.log(req);
         var Cars = new CarsModel({

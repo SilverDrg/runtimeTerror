@@ -1,6 +1,9 @@
 const { render } = require('../app.js');
-var CameraModel = require('../models/CameraModel.js');
-var CarsController = require('../controllers/CarsController.js');
+const CameraModel = require('../models/CameraModel.js');
+const GPSModel = require('../models/GPSModel.js');
+const gpsController = require('../controllers/GPSController.js');
+const CarsController = require('../controllers/CarsController.js');
+const { resolve } = require('path');
 
 const tasks = [];
 
@@ -97,6 +100,7 @@ module.exports = {
     create: function (req, res) {
         console.log(req.body);
         console.log(req.file);
+
         var Camera = new CameraModel({
             src: 'images/' + req.file.filename
         });
@@ -120,11 +124,13 @@ module.exports = {
     createMobile: function (req, res) {
         console.log(req.body);
         console.log(req.file);
-        var Camera = new CameraModel({
-            src: 'images/' + req.file.filename
+
+        var Location = new GPSModel({
+            latitude: req.body.latitude,
+            longditude: req.body.longditude
         });
 
-        Camera.save(function (err, Camera) {
+        Location.save(function (err, Location) {
             if (err) {
                 return res.status(500).json({
                     message: 'Error when creating Camera',
@@ -132,12 +138,58 @@ module.exports = {
                 });
             }
 
-            // const spawn = require("child_process").spawn;
-            // const pythonProcess = spawn('python',["../../../Backend/ObjectRecognition/cars_detection.py", '--image', Camera.src]);
+            var Camera = new CameraModel({
+                src: 'images/' + req.file.filename
+            });
+    
+            Camera.save(function (err, Camera) {
+                if (err) {
+                    return res.status(500).json({
+                        message: 'Error when creating Camera',
+                        error: err
+                    });
+                }
+    
+                let sendData = {};
+                sendData.image_id = Camera._id;
+                sendData.location_id = Location._id;
+                add(function (resolve) {
+                    const spawn = require("child_process").spawn;
+                    const pythonLicenseProcess = spawn('python', ["../../Backend/ObjectRecognition/license_plate.py", '--image', 'http://localhost:3001/' + Camera.src]);
+                    pythonLicenseProcess.stdout.on('data', function (data) {
+                        console.log('Pipe data from python license script ...');
+                        sendData.license_plate = data.toString();
+                        console.log('python license result:');
+                        console.log(sendData.license_plate);
+                        resolve();
+                    })
 
-            // console.log('python result: ' + pythonProcess);
-            return res.json(Camera);
-        });
+                    pythonLicenseProcess.on('exit', resolve);
+                    pythonLicenseProcess.on('error', function (err) {
+                        console.error(err);
+                        resolve();
+                    });
+                });
+                
+                add(function (resolve) {
+                    const spawn = require("child_process").spawn;
+                    const pythonCarProcess = spawn('python', ["../../Backend/ObjectRecognition/cars_detection.py", '--image', 'http://localhost:3001/' + Camera.src]);
+                    pythonCarProcess.stdout.on('data', function (data) {
+                        console.log('Pipe data from python car script ...');
+                        sendData.python = data.toString();
+                        console.log('python car result:');
+                        console.log(sendData.python);
+                        CarsController.createFromImage(sendData);
+                        resolve();
+                    });
+                    pythonCarProcess.on('exit', resolve);
+                    pythonCarProcess.on('error', function (err) {
+                        console.error(err);
+                        resolve();
+                    });
+                });
+            });
+        })
     },
 
     createCam: function (req, res) {

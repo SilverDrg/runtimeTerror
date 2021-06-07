@@ -266,7 +266,7 @@ public class MainActivity extends AppCompatActivity {
                             }
 
                             newHttp.post(API_URL + "gps", jsonObject);
-                            newHttp.doPostRequestFile(API_URL + "camera", file, imageFileName);
+                            newHttp.doPostRequestFile(API_URL + "camera", file, imageFileName, jsonObject);
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
