@@ -1,4 +1,4 @@
-import { useEffect, useState, Component } from "react";
+import { Component } from "react";
 import Pagination from "../addon-components/Pagination";
 import Image from "./Image";
 
