@@ -5,6 +5,7 @@ import pytesseract as tess
 import imutils
 import argparse
 import sys
+import requests
 
 tess.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
 
@@ -15,7 +16,9 @@ ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True, help="path to image")
 args = vars(ap.parse_args())
 
-image = cv2.imread(args["image"])
+resp = requests.get(args["image"], stream=True).raw
+image = np.asarray(bytearray(resp.read()), dtype="uint8")
+image = cv2.imdecode(image, cv2.IMREAD_COLOR)
 
 #resize the image to 500
 image = imutils.resize(image, width=500)

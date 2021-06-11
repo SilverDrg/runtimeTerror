@@ -94,6 +94,44 @@ module.exports = {
         });
     },
 
+    createFromImage: function (req, res) {
+        console.log(req);
+        var trafficSign = new TrafficsignModel({
+			symbol : req.python,
+			location : req.location_id,
+			image: ""
+        });
+
+        TrafficsignimagesModel.findOne({name: trafficSign.symbol}, function (err, TrafficSignImages) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when getting TrafficSignImages.',
+                    error: err
+                });
+            }
+
+            if (!TrafficSignImages) {
+                return res.status(404).json({
+                    message: 'No such TrafficSignImages'
+                });
+            }
+
+            trafficSign.image = TrafficSignImages._id;
+
+            trafficSign.save(function (err, trafficSign) {
+                if (err) {
+                    return res.status(500).json({
+                        message: 'Error when creating trafficSign',
+                        error: err
+                    });
+                }
+    
+                return res.status(201).json(trafficSign);
+            });
+
+        });
+    },
+
     /**
      * trafficSignController.update()
      */

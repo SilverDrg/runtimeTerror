@@ -3,7 +3,9 @@ const CameraModel = require('../models/CameraModel.js');
 const GPSModel = require('../models/GPSModel.js');
 const gpsController = require('../controllers/GPSController.js');
 const CarsController = require('../controllers/CarsController.js');
+const trafficSignController = require('../controllers/TrafficSignController.js');
 const { resolve } = require('path');
+const TrafficSignController = require('../controllers/TrafficSignController.js');
 
 const tasks = [];
 
@@ -150,9 +152,11 @@ module.exports = {
                     });
                 }
     
+                // Process data for license plates
                 let sendData = {};
                 sendData.image_id = Camera._id;
                 sendData.location_id = Location._id;
+                // Add process to queue
                 add(function (resolve) {
                     const spawn = require("child_process").spawn;
                     const pythonLicenseProcess = spawn('python', ["../../Backend/ObjectRecognition/license_plate.py", '--image', 'http://localhost:3001/' + Camera.src]);
@@ -170,7 +174,9 @@ module.exports = {
                         resolve();
                     });
                 });
-                
+
+                // Process data for Cars
+                // Add process to queue
                 add(function (resolve) {
                     const spawn = require("child_process").spawn;
                     const pythonCarProcess = spawn('python', ["../../Backend/ObjectRecognition/cars_detection.py", '--image', 'http://localhost:3001/' + Camera.src]);
@@ -184,6 +190,29 @@ module.exports = {
                     });
                     pythonCarProcess.on('exit', resolve);
                     pythonCarProcess.on('error', function (err) {
+                        console.error(err);
+                        resolve();
+                    });
+                });
+
+                // Process data for Traffic signs
+                let trafficSignData = {};
+                trafficSignData.image_id = Camera._id;
+                trafficSignData.location_id = Location._id;
+                // Add process to queue
+                add(function (resolve) {
+                    const spawn = require("child_process").spawn;
+                    const pythonTSProcess = spawn('python', ["../../Backend/ObjectRecognition/predict.py", '--model', './trafficsignnet.model', '--image', 'http://localhost:3001/' + Camera.src]);
+                    pythonTSProcess.stdout.on('data', function (data) {
+                        console.log('Pipe data from python car script ...');
+                        trafficSignData.python = data.toString();
+                        console.log('python car result:');
+                        console.log(trafficSignData.python);
+                        TrafficSignController.createFromImage(trafficSignData);
+                        resolve();
+                    });
+                    pythonTSProcess.on('exit', resolve);
+                    pythonTSProcess.on('error', function (err) {
                         console.error(err);
                         resolve();
                     });
