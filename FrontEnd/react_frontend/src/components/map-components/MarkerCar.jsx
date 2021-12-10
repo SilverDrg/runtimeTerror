@@ -10,6 +10,7 @@ function MarkerCar(props) {
     } else {
         fillColor = { fillColor: 'green', color: 'green' }
     }
+    console.log(car.location);
 
     return(
         <CircleMarker center={[car.location.latitude, car.location.longditude]} pathOptions={fillColor} radius={20}>

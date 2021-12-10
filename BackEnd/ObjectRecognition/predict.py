@@ -25,7 +25,6 @@ ap.add_argument("-i", "--images", required=True, help="path to testing directori
 args = vars(ap.parse_args())
 
 #load the traffic sign recognizer model
-print("[INFO] loading model...")
 model = load_model(args["model"])
 
 #load the label names
@@ -33,7 +32,6 @@ labelNames = open("signnames.csv").read().strip().split("\n")[1:]
 labelNames = [l.split(",")[1] for l in labelNames] #parse the label names
 
 #  and take a sample
-print("[INFO] predicting...")
 imagePaths = args["images"]
 image = io.imread(imagePaths)
 image = transform.resize(image, (32,32)) #resize it to 32x32 pixels

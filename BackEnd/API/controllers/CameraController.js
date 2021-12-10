@@ -103,11 +103,12 @@ module.exports = {
         console.log(req.body);
         console.log(req.file);
 
-        var Camera = new CameraModel({
-            src: 'images/' + req.file.filename
+        var Location = new GPSModel({
+            latitude: 46.5575,
+            longditude: 15.645556
         });
 
-        Camera.save(function (err, Camera) {
+        Location.save(function (err, Location) {
             if (err) {
                 return res.status(500).json({
                     message: 'Error when creating Camera',
@@ -115,12 +116,85 @@ module.exports = {
                 });
             }
 
-            // const spawn = require("child_process").spawn;
-            // const pythonProcess = spawn('python',["../../../Backend/ObjectRecognition/cars_detection.py", '--image', Camera.src]);
+            var Camera = new CameraModel({
+                src: 'images/' + req.file.filename
+            });
+    
+            Camera.save(function (err, Camera) {
+                if (err) {
+                    return res.status(500).json({
+                        message: 'Error when creating Camera',
+                        error: err
+                    });
+                }
+    
+                // Process data for license plates
+                let sendData = {};
+                sendData.image_id = Camera._id;
+                sendData.location_id = Location._id;
+                // Add process to queue
+                add(function (resolve) {
+                    const spawn = require("child_process").spawn;
+                    const pythonLicenseProcess = spawn('python', ["../../Backend/ObjectRecognition/license_plate.py", '--image', 'http://localhost:3001/' + Camera.src]);
+                    pythonLicenseProcess.stdout.on('data', function (data) {
+                        console.log('Pipe data from python license script ...');
+                        sendData.license_plate = data.toString();
+                        console.log('python license result:');
+                        console.log(sendData.license_plate);
+                        resolve();
+                    })
 
-            // console.log('python result: ' + pythonProcess);
-            return res.json(Camera);
-        });
+                    pythonLicenseProcess.on('exit', resolve);
+                    pythonLicenseProcess.on('error', function (err) {
+                        console.error(err);
+                        resolve();
+                    });
+                });
+
+                // Process data for Cars
+                // Add process to queue
+                add(function (resolve) {
+                    const spawn = require("child_process").spawn;
+                    const pythonCarProcess = spawn('python', ["../../Backend/ObjectRecognition/cars_detection.py", '--image', 'http://localhost:3001/' + Camera.src]);
+                    pythonCarProcess.stdout.on('data', function (data) {
+                        console.log('Pipe data from python car script ...');
+                        sendData.python = data.toString();
+                        console.log('python car result:');
+                        console.log(sendData.python);
+                        CarsController.createFromImage(sendData);
+                        resolve();
+                    });
+                    pythonCarProcess.on('exit', resolve);
+                    pythonCarProcess.on('error', function (err) {
+                        console.error(err);
+                        resolve();
+                    });
+                });
+
+                // Process data for Traffic signs
+                let trafficSignData = {};
+                trafficSignData.image_id = Camera._id;
+                trafficSignData.location_id = Location._id;
+                // Add process to queue
+                add(function (resolve) {
+                    const spawn = require("child_process").spawn;
+                    const pythonTSProcess = spawn('python', ["../../Backend/ObjectRecognition/predict.py", '--model', './trafficsignnet.model', '--image', 'http://localhost:3001/' + Camera.src]);
+                    pythonTSProcess.stdout.on('data', function (data) {
+                        console.log('Pipe data from python traffic sign script ...');
+                        trafficSignData.python = data.toString();
+                        console.log('python traffic sign result:');
+                        console.log(trafficSignData.python);
+                        TrafficSignController.createFromImage(trafficSignData);
+                        resolve();
+                    });
+                    pythonTSProcess.on('exit', resolve);
+                    pythonTSProcess.on('error', function (err) {
+                        console.error(err);
+                        resolve();
+                    });
+                });
+            });
+        })
     },
 
     createMobile: function (req, res) {
