@@ -20,7 +20,7 @@ var gpsRouter = require('./routes/GPSRoutes');
 var licensePlateRouter = require('./routes/LicensePlateRoutes');
 var trafficSignRouter = require('./routes/TrafficSignRoutes');
 var trafficSignImagesRouter = require('./routes/TrafficSignImagesRoutes');
-var scraperRouter = require('./routes/Scraper');
+var scraperRouter = require('./routes/ScraperRoutes');
 
 var app = express();
 

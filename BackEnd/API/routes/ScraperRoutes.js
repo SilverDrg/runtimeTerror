@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+var ScraperController = require('../controllers/ScraperController.js');
 const cheerio = require("cheerio");
 const axios = require('axios');
 const fs = require('fs');
@@ -69,9 +70,11 @@ async function scrapeAll(){
     return 'Pages were scraped';
 }
 
-router.get('/', function(req, res, next) {
-    scrapeAll();
-    res.render('index', { title: 'Express' });
-});
+// router.get('/', function(req, res, next) {
+//     scrapeAll();
+//     res.render('index', { title: 'Express' });
+// });
+
+router.get('/', ScraperController.scrapeAll);
 
 module.exports = router;
