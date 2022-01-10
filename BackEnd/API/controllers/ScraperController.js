@@ -1,6 +1,7 @@
+const path = require('path');
 const url = require('../public/javascripts/sloveniaCams.json');
-const {Worker} = require("worker_threads")
-const paralelScrape = '../public/javascripts/paralelScrape.js';
+const {Worker} = require("worker_threads");
+const paralelScrape = path.resolve(__dirname, '../public/javascripts/paralelScrape.js');
 
 module.exports = {
     scrapeAll: function () {
@@ -14,7 +15,7 @@ module.exports = {
             if (workerNumber == divider - 1) {
                 end += remaining;
             }
-            const worker = new Worker('../public/javascripts/paralelScrape.js', {workerData: {startIndex: start, endIndex: end, urls: url}})
+            const worker = new Worker(paralelScrape, {workerData: {startIndex: start, endIndex: end, urls: url}})
 
             worker.once("message", result => {
                 console.log(`Thread number ${result} has finished.`);
