@@ -59,47 +59,82 @@ module.exports = {
         var longditude = req.params.longditude;
         var closestLocation;
 
-        var GpsLatitude = GpsModel.findOne({latitude: { $near: latitude }}, function (err, GpsLatitude) {
+        var bottomLeftQuadron = GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $lte: longditude }}, function (err, location) {
             if (err) {
                 return res.status(500).json({
-                    message: 'Error when getting GPS latitude.',
+                    message: 'Error when getting GPS bottomLeftQuadron.',
                     error: err
                 });
             }
 
-            if (!GpsLatitude) {
-                return res.status(404).json({
-                    message: 'No such GPS latitude'
-                });
+            if (!location) {
+                console.log('No such GPS bottomLeftQuadron');
             }
         });
 
-        var GpsLongditude = GpsModel.findOne({longditude: { $near: longditude }}, function (err, GpsLongditude) {
+        var bottomRightQuadron = GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $gt: longditude }}, function (err, location) {
             if (err) {
                 return res.status(500).json({
-                    message: 'Error when getting GPS longditude.',
+                    message: 'Error when getting GPS bottomRightQuadron.',
                     error: err
                 });
             }
 
-            if (!GpsLongditude) {
-                return res.status(404).json({
-                    message: 'No such GPS longditude'
+            if (!location) {
+                console.log('No such GPS bottomRightQuadron');
+            }
+        });
+
+        var topLeftQuadron = GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $lte: longditude }}, function (err, location) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when getting GPS topLeftQuadron.',
+                    error: err
                 });
+            }
+
+            if (!location) {
+                console.log('No such GPS topLeftQuadron');
+            }
+        });
+
+        var topRightQuadron = GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $gt: longditude }}, function (err, location) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when getting GPS topRightQuadron.',
+                    error: err
+                });
+            }
+
+            if (!location) {
+                console.log('No such GPS topRightQuadron');
             }
         });
 
         //dist = sqrt((x2-x1)^2 + (y2-y1)^2)
-        var distance1 = Math.sqrt(Math.pow(GpsLatitude.latitude - latitude, 2) + Math.pow(GpsLatitude.longditude - longditude, 2));
-        var distance2 = Math.sqrt(Math.pow(GpsLongditude.latitude - latitude, 2) + Math.pow(GpsLongditude.longditude - longditude, 2));
+        var locations = [];
+        locations[0] = bottomLeftQuadron;
+        locations[1] = bottomRightQuadron;
+        locations[2] = topLeftQuadron;
+        locations[3] = topRightQuadron;
 
-        if (distance1 < distance2) {
-            closestLocation = GpsLatitude;
-        } else {
-            closestLocation = GpsLongditude;
+        var distances = [];
+        distances[0] = Math.sqrt(Math.pow(bottomLeftQuadron.latitude - latitude, 2) + Math.pow(bottomLeftQuadron.longditude - longditude, 2));
+        distances[1]  = Math.sqrt(Math.pow(bottomRightQuadron.latitude - latitude, 2) + Math.pow(bottomRightQuadron.longditude - longditude, 2));
+        distances[2]  = Math.sqrt(Math.pow(topLeftQuadron.latitude - latitude, 2) + Math.pow(topLeftQuadron.longditude - longditude, 2));
+        distances[3]  = Math.sqrt(Math.pow(topRightQuadron.latitude - latitude, 2) + Math.pow(topRightQuadron.longditude - longditude, 2));
+        
+        var nearest = distances[0];
+        var closestLocation = locations[0];
+
+        for (let index = 1; index < distances.length; index++) {
+            if (distances[index] != null && nearest > distances[index]) {
+                nearest = distances[index];
+                closestLocation = locations[index];
+            }
         }
 
-        TrafficsignModel.findOne({location : closestLocation._id}, function (err, trafficSign) {
+        TrafficsignModel.findOne({'location._id' : closestLocation._id}, function (err, trafficSign) {
             if (err) {
                 return res.status(500).json({
                     message: 'Error when getting trafficSign.',
@@ -114,7 +149,7 @@ module.exports = {
             }
 
             return res.json(trafficSign.symbol);  
-        }).populate('location').exec();
+        });
     },
 
     /**
