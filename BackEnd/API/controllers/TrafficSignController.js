@@ -1,5 +1,6 @@
 var TrafficsignModel = require('../models/TrafficSignModel.js');
 var TrafficsignimagesModel = require('../models/TrafficSignImagesModel.js');
+var GpsModel = require('../models/GPSModel.js');
 
 /**
  * trafficSignController.js
@@ -142,7 +143,7 @@ module.exports = {
                 });
             }
 
-            if (!Cars) {
+            if (!trafficSign) {
                 return res.status(404).json({
                     message: 'No such trafficSign'
                 });
