@@ -114,7 +114,7 @@ module.exports = {
                 });
             }
 
-            return res.json(Cars);  
+            return res.json(Cars.numberOfCars);  
         }).populate('location').exec();
     },
 

@@ -113,7 +113,7 @@ module.exports = {
                 });
             }
 
-            return res.json(trafficSign);  
+            return res.json(trafficSign.symbol);  
         }).populate('location').exec();
     },
 
