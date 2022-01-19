@@ -57,7 +57,7 @@ module.exports = {
 
     atLocation: function (req, res) {
         var latitude = req.params.latitude;
-        var longditude = req.params.longditude;
+        var longitude = req.params.longditude;
         var closestLocation = null;
         var nearest = 360;
 
@@ -69,7 +69,7 @@ module.exports = {
         var locations = []; // GPS objects
         var distances = []; // Distance of each object from original coords
 
-        GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $lte: longditude }}, function (err1, location1) {
+        GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $lte: longitude }}, function (err1, location1) {
             if (err1) {
                 return res.status(500).json({
                     message: 'Error when getting GPS bottomLeftQuadron.',
@@ -77,7 +77,7 @@ module.exports = {
                 });
             }
 
-            GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $gt: longditude }}, function (err2, location2) {
+            GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $gt: longitude }}, function (err2, location2) {
                 if (err2) {
                     return res.status(500).json({
                         message: 'Error when getting GPS bottomRightQuadron.',
@@ -85,7 +85,7 @@ module.exports = {
                     });
                 }
 
-                GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $lte: longditude }}, function (err3, location3) {
+                GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $lte: longitude }}, function (err3, location3) {
                     if (err3) {
                         return res.status(500).json({
                             message: 'Error when getting GPS topLeftQuadron.',
@@ -93,7 +93,7 @@ module.exports = {
                         });
                     }
 
-                    GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $gt: longditude }}, function (err4, location4) {
+                    GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $gt: longitude }}, function (err4, location4) {
                         if (err4) {
                             return res.status(500).json({
                                 message: 'Error when getting GPS topRightQuadron.',
@@ -108,7 +108,7 @@ module.exports = {
                         } else {
                             bottomLeftQuadron = location1;
                             locations[0] = bottomLeftQuadron;
-                            distances[0] = Math.sqrt(Math.pow(bottomLeftQuadron.latitude - latitude, 2) + Math.pow(bottomLeftQuadron.longditude - longditude, 2));
+                            distances[0] = Math.sqrt(Math.pow(bottomLeftQuadron.latitude - latitude, 2) + Math.pow(bottomLeftQuadron.longditude - longitude, 2));
                         }
 
                         if (!location2) {
@@ -118,7 +118,7 @@ module.exports = {
                         } else {
                             bottomRightQuadron = location2;
                             locations[1] = bottomRightQuadron;
-                            distances[1] = Math.sqrt(Math.pow(bottomRightQuadron.latitude - latitude, 2) + Math.pow(bottomRightQuadron.longditude - longditude, 2));
+                            distances[1] = Math.sqrt(Math.pow(bottomRightQuadron.latitude - latitude, 2) + Math.pow(bottomRightQuadron.longditude - longitude, 2));
                         }
 
                         if (!location3) {
@@ -128,7 +128,7 @@ module.exports = {
                         } else {
                             topLeftQuadron = location3;
                             locations[2] = topLeftQuadron;
-                            distances[2] = Math.sqrt(Math.pow(topLeftQuadron.latitude - latitude, 2) + Math.pow(topLeftQuadron.longditude - longditude, 2));
+                            distances[2] = Math.sqrt(Math.pow(topLeftQuadron.latitude - latitude, 2) + Math.pow(topLeftQuadron.longditude - longitude, 2));
                         }
             
                         if (!location4) {
@@ -138,7 +138,7 @@ module.exports = {
                         } else {
                             topRightQuadron = location4;
                             locations[3] = topRightQuadron;
-                            distances[3] = Math.sqrt(Math.pow(topRightQuadron.latitude - latitude, 2) + Math.pow(topRightQuadron.longditude - longditude, 2));
+                            distances[3] = Math.sqrt(Math.pow(topRightQuadron.latitude - latitude, 2) + Math.pow(topRightQuadron.longditude - longitude, 2));
                         }
 
                         //dist = sqrt((x2-x1)^2 + (y2-y1)^2)
@@ -168,7 +168,7 @@ module.exports = {
                                     });
                                 }
                 
-                                return res.json({ carNumber: Cars.numberOfCars, latitude: closestLocation.latitude, longditude: closestLocation.longditude });  
+                                return res.json({ carNumber: Cars.numberOfCars, latitude: closestLocation.latitude, longitude: closestLocation.longditude });  
                             }).populate('location').exec();
                         }
                     });
