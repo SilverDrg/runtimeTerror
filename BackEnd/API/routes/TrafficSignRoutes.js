@@ -12,6 +12,7 @@ router.get('/add', trafficSignController.displayAdd);
  * GET
  */
 router.get('/:id', trafficSignController.show);
+router.get('/:latitude/:longditude', trafficSignController.atLocation);
 
 /*
  * POST

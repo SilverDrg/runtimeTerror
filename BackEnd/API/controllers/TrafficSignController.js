@@ -54,6 +54,69 @@ module.exports = {
         });
     },
 
+    atLocation: function (req, res) {
+        var latitude = req.params.latitude;
+        var longditude = req.params.longditude;
+        var closestLocation;
+
+        var GpsLatitude = GpsModel.findOne({latitude: { $near: latitude }}, function (err, GpsLatitude) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when getting GPS latitude.',
+                    error: err
+                });
+            }
+
+            if (!GpsLatitude) {
+                return res.status(404).json({
+                    message: 'No such GPS latitude'
+                });
+            }
+        });
+
+        var GpsLongditude = GpsModel.findOne({longditude: { $near: longditude }}, function (err, GpsLongditude) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when getting GPS longditude.',
+                    error: err
+                });
+            }
+
+            if (!GpsLongditude) {
+                return res.status(404).json({
+                    message: 'No such GPS longditude'
+                });
+            }
+        });
+
+        //dist = sqrt((x2-x1)^2 + (y2-y1)^2)
+        var distance1 = Math.sqrt(Math.pow(GpsLatitude.latitude - latitude, 2) + Math.pow(GpsLatitude.longditude - longditude, 2));
+        var distance2 = Math.sqrt(Math.pow(GpsLongditude.latitude - latitude, 2) + Math.pow(GpsLongditude.longditude - longditude, 2));
+
+        if (distance1 < distance2) {
+            closestLocation = GpsLatitude;
+        } else {
+            closestLocation = GpsLongditude;
+        }
+
+        TrafficsignModel.findOne({location : closestLocation._id}, function (err, trafficSign) {
+            if (err) {
+                return res.status(500).json({
+                    message: 'Error when getting trafficSign.',
+                    error: err
+                });
+            }
+
+            if (!Cars) {
+                return res.status(404).json({
+                    message: 'No such trafficSign'
+                });
+            }
+
+            return res.json(trafficSign);  
+        }).populate('location').exec();
+    },
+
     /**
      * trafficSignController.create()
      */
