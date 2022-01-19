@@ -125,32 +125,36 @@ module.exports = {
         distances[2]  = Math.sqrt(Math.pow(topLeftQuadron.latitude - latitude, 2) + Math.pow(topLeftQuadron.longditude - longditude, 2));
         distances[3]  = Math.sqrt(Math.pow(topRightQuadron.latitude - latitude, 2) + Math.pow(topRightQuadron.longditude - longditude, 2));
         
-        var nearest = distances[0];
-        var closestLocation = locations[0];
+        var nearest = 360;
+        var closestLocation = null;
 
-        for (let index = 1; index < distances.length; index++) {
-            if (distances[index] != null && nearest > distances[index]) {
+        for (let index = 0; index < distances.length; index++) {
+            if (distances[index] != null && nearest > distances[index] && distances[index] < 0.0004) {
                 nearest = distances[index];
                 closestLocation = locations[index];
             }
         }
 
-        TrafficsignModel.findOne({'location._id' : closestLocation._id}, function (err, trafficSign) {
-            if (err) {
-                return res.status(500).json({
-                    message: 'Error when getting trafficSign.',
-                    error: err
-                });
-            }
+        if (closesLocation != null) {
+            TrafficsignModel.findOne({'location._id' : closestLocation._id}, function (err, trafficSign) {
+                if (err) {
+                    return res.status(500).json({
+                        message: 'Error when getting trafficSign.',
+                        error: err
+                    });
+                }
 
-            if (!trafficSign) {
-                return res.status(404).json({
-                    message: 'No such trafficSign'
-                });
-            }
+                if (!trafficSign) {
+                    return res.status(404).json({
+                        message: 'No such trafficSign'
+                    });
+                }
 
-            return res.json(trafficSign.symbol);  
-        });
+                return res.json(trafficSign.symbol);  
+            });
+        } else {
+            return res.json("None");
+        }
     },
 
     /**

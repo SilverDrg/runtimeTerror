@@ -125,32 +125,36 @@ module.exports = {
         distances[2]  = Math.sqrt(Math.pow(topLeftQuadron.latitude - latitude, 2) + Math.pow(topLeftQuadron.longditude - longditude, 2));
         distances[3]  = Math.sqrt(Math.pow(topRightQuadron.latitude - latitude, 2) + Math.pow(topRightQuadron.longditude - longditude, 2));
         
-        var nearest = distances[0];
-        var closestLocation = locations[0];
+        var nearest = 360;
+        var closestLocation = null;
 
-        for (let index = 1; index < distances.length; index++) {
-            if (distances[index] != null && nearest > distances[index]) {
+        for (let index = 0; index < distances.length; index++) {
+            if (distances[index] != null && nearest > distances[index] && distances[index] < 0.0004) {
                 nearest = distances[index];
                 closestLocation = locations[index];
             }
         }
 
-        CarsModel.findOne({'location._id' : closestLocation._id}, function (err, Cars) {
-            if (err) {
-                return res.status(500).json({
-                    message: 'Error when getting Cars.',
-                    error: err
-                });
-            }
+        if (closesLocation != null) {
+            CarsModel.findOne({'location._id' : closestLocation._id}, function (err, Cars) {
+                if (err) {
+                    return res.status(500).json({
+                        message: 'Error when getting Cars.',
+                        error: err
+                    });
+                }
 
-            if (!Cars) {
-                return res.status(404).json({
-                    message: 'No such Cars'
-                });
-            }
+                if (!Cars) {
+                    return res.status(404).json({
+                        message: 'No such Cars'
+                    });
+                }
 
-            return res.json(Cars.numberOfCars);  
-        });
+                return res.json(Cars.numberOfCars);  
+            });
+        } else {
+            return res.json("None");
+        }
     },
 
     /**
