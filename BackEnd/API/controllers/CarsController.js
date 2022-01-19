@@ -168,7 +168,7 @@ module.exports = {
                                     });
                                 }
                 
-                                return res.json({ signType: Cars.numberOfCars, latitude: closestLocation.latitude, longditude: closestLocation.longditude });  
+                                return res.json({ carNumber: Cars.numberOfCars, latitude: closestLocation.latitude, longditude: closestLocation.longditude });  
                             }).populate('location').exec();
                         }
                     });
