@@ -12,7 +12,7 @@ router.get('/add', CarsController.displayAdd);
  * GET
  */
 router.get('/:id', CarsController.show);
-
+router.get('/:latitude/:longditude', CarsController.atLocation);
 /*
  * POST
  */
