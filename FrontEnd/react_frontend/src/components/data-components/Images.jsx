@@ -38,7 +38,7 @@ class Images extends Component {
     }
 
     componentDidMount() {
-        fetch('http://api:3001/camera')
+        fetch('http://api/camera')
         .then(res => res.json())
         .then(data => this.setState({images: data}));
     }
