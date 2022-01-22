@@ -31,14 +31,14 @@ class Images extends Component {
     // }
 
     async getImages() {
-        const res = await fetch('http://localhost:3001/camera');
+        const res = await fetch('http://api:3001/camera');
         const data = await res.json();
         console.log("images from api: \n" + data);
         this.setState({images: data});
     }
 
     componentDidMount() {
-        fetch('http://localhost:3001/camera')
+        fetch('http://api:3001/camera')
         .then(res => res.json())
         .then(data => this.setState({images: data}));
     }

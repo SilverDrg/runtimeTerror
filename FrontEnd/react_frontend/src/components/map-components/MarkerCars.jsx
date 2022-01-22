@@ -5,7 +5,7 @@ function MarkerCars(props) {
     const [cars, setCars] = useState([]);
     useEffect(function() {
         const getCars = async function() {
-            const res = await fetch('http://localhost:3001/cars');
+            const res = await fetch('http://api:3001/cars');
             const data = await res.json();
             console.log("cars from api: \n" + data);
             setCars(data);
