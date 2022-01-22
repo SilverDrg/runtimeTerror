@@ -163,8 +163,10 @@ module.exports = {
                                 }
                 
                                 if (!Cars) {
-                                    return res.status(404).json({
-                                        message: 'No such Cars'
+                                    return res.json({
+                                        carNumber: '0',
+                                        latitude: '0',
+                                        longditude: '0'
                                     });
                                 }
                 

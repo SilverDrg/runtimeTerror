@@ -163,8 +163,10 @@ module.exports = {
                                 }
                 
                                 if (!trafficSign) {
-                                    return res.status(404).json({
-                                        message: 'No such trafficSign'
+                                    return res.json({
+                                        signType: 'None',
+                                        latitude: '0',
+                                        longditude: '0'
                                     });
                                 }
                 
