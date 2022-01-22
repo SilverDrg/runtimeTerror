@@ -1,5 +1,17 @@
 version: "3"
 services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - "27017:27017"
+    hostname: mongo
+
+  tensor:
+    container_name: tensor
+    build: ./BackEnd/ObjectRecognition
+    hostname: tensor
+
   api:
     container_name: api
     build: ./BackEnd/API
@@ -7,14 +19,12 @@ services:
      - MONGO_URI=mongodb://mongo:27017/projektnaNaloga
     ports:
       - "3001:3001"
+    hostname: api
     links:
       - mongo
       - tensor
     depends_on:
       - mongo
-  tensor:
-    container_name: tensor
-    build: ./BackEnd/ObjectRecognition
   react:
     container_name: reactapp
     image: react_img
@@ -22,12 +32,6 @@ services:
     command: "npm start"
     ports:
       - "3000:3000"
+    hostname: reactapp
     links:
       - api
-  mongo:
-    container_name: mongo
-    image: mongo
-    ports:
-      - "27017:27017"
-    networks:
-      - roadscannernetwork

@@ -138,7 +138,7 @@ module.exports = {
                 // Process data for Cars
                 // Add process to queue
                 add(function (resolve) {
-                    axios.post('http://tensor/countcars?image_url=' + Camera.src)
+                    axios.post('http://tensor:8000/countcars?image_url=' + Camera.src)
                         .then(res => {
                             sendData.python = res.data.toString();
                             CarsController.createFromImage(sendData);
@@ -156,7 +156,7 @@ module.exports = {
                 trafficSignData.location_id = Location._id;
                 // Add process to queue
                 add(function (resolve) {
-                    axios.post('http://tensor/detectsign?image_url=' + Camera.src)
+                    axios.post('http://tensor:8000/detectsign?image_url=' + Camera.src)
                         .then(res => {
                             trafficSignData.python = res.data.toString();
                             TrafficSignController.createFromImage(trafficSignData);
@@ -208,7 +208,7 @@ module.exports = {
                 // Process data for Cars
                 // Add process to queue
                 add(function (resolve) {
-                    axios.post('http://tensor/countcars?image_url=' + Camera.src)
+                    axios.post('http://tensor:8000/countcars?image_url=' + Camera.src)
                         .then(res => {
                             sendData.python = res.data.toString();
                             CarsController.createFromImage(sendData);
@@ -226,7 +226,7 @@ module.exports = {
                 trafficSignData.location_id = Location._id;
                 // Add process to queue
                 add(function (resolve) {
-                    axios.post('http://tensor/detectsign?image_url=' + Camera.src)
+                    axios.post('http://tensor:8000/detectsign?image_url=' + Camera.src)
                         .then(res => {
                             trafficSignData.python = res.data.toString();
                             TrafficSignController.createFromImage(trafficSignData);
@@ -260,7 +260,7 @@ module.exports = {
             sendData.image_id = Camera._id;
             sendData.location_id = req.body.location_id;
             add(function (resolve) {
-                axios.post('http://tensor/countcars?image_url=' + Camera.src)
+                axios.post('http://tensor:8000/countcars?image_url=' + Camera.src)
                         .then(res => {
                             sendData.python = res.data.toString();
                             CarsController.createFromImage(sendData);
