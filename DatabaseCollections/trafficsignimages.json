@@ -1,0 +1,183 @@
+[{
+  "_id": {
+    "$oid": "60af78c9dfe3c87d98aa60c7"
+  },
+  "name": "doggo",
+  "path": "images/bc48ee20d10cce5d5a609885d0cfdf3a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60af78e2dfe3c87d98aa60c8"
+  },
+  "name": "Stop",
+  "path": "images/ce7922adac3c06af50e6ce6274a714df",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60af78ecdfe3c87d98aa60c9"
+  },
+  "name": "90",
+  "path": "images/5451166794938697b0634a2497384274",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60af78f4dfe3c87d98aa60ca"
+  },
+  "name": "60",
+  "path": "images/3c9e2eb71b37cd1e2b074c9a744382b0",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60af78fddfe3c87d98aa60cb"
+  },
+  "name": "50",
+  "path": "images/afd72d3fc7ccab4d0876a24bb8d1fabb",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60af7905dfe3c87d98aa60cc"
+  },
+  "name": "40",
+  "path": "images/4c3cb12ae70711c739f184979b440c8a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ff32801c590df0faa38b"
+  },
+  "name": "Speed limit (20km/h)",
+  "path": "images/16a2edea6345772c7cdfa8689ed7e720",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ff44801c590df0faa38c"
+  },
+  "name": "Speed limit (30km/h)",
+  "path": "images/353ee6963f1242519f81d0bb2de6843a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ff4f801c590df0faa38d"
+  },
+  "name": "Speed limit (50km/h)",
+  "path": "images/3e1f85c52842b82a929912fed7237bad",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ff59801c590df0faa38e"
+  },
+  "name": "Speed limit (60km/h)",
+  "path": "images/70c7300998c24ae5b778296ca010ccd9",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ff63801c590df0faa38f"
+  },
+  "name": "Speed limit (70km/h)",
+  "path": "images/6a470b2e6405faf5fd9ac77c30842209",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ff6c801c590df0faa390"
+  },
+  "name": "Speed limit (80km/h)",
+  "path": "images/05b22185a8f77b0efe609e36b2ff85bd",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ff78801c590df0faa391"
+  },
+  "name": "Speed limit (100km/h)",
+  "path": "images/1119c6d008f1f7afb761dc8c2bc97aeb",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ff83801c590df0faa392"
+  },
+  "name": "Speed limit (120km/h)",
+  "path": "images/de5732b46cf91cc5e05683669e8c39f4",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ff94801c590df0faa393"
+  },
+  "name": "No passing",
+  "path": "images/939b8aabc7ace2e1bf309c1e900e2333",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ffa7801c590df0faa394"
+  },
+  "name": "No passing for vechiles over 3.5 metric tons",
+  "path": "images/98aab83bb57dca748d9055fa4e84233d",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ffb4801c590df0faa395"
+  },
+  "name": "Right-of-way at the next intersection",
+  "path": "images/27ef78999f5adcc5b1c2c9cba9660fd1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ffbe801c590df0faa396"
+  },
+  "name": "Priority road",
+  "path": "images/228f7c0b43622de0ef8524db5580a832",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ffc8801c590df0faa397"
+  },
+  "name": "Yield",
+  "path": "images/080156802b47dd3451258b3543a1558d",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ffd6801c590df0faa398"
+  },
+  "name": "No vehicles",
+  "path": "images/1bbc4f3fd8a74a3b3fddf4fb7111c7d8",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ffe3801c590df0faa399"
+  },
+  "name": "Vechiles over 3.5 metric tons prohibited",
+  "path": "images/e53c180da8448223ea2c85335cf354ff",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2ffee801c590df0faa39a"
+  },
+  "name": "No entry",
+  "path": "images/ef5e04505d6dcc911ad139a807dc8665",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c2fffc801c590df0faa39b"
+  },
+  "name": "General caution",
+  "path": "images/419c49b29a1e104a2a9784a318afa2cc",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c30009801c590df0faa39c"
+  },
+  "name": "Traffic signals",
+  "path": "images/596c2fdfbbd1d8e24d9e95991e11b749",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c30017801c590df0faa39d"
+  },
+  "name": "Wild animals crossing",
+  "path": "images/26c9c1ee7a769b4ce8a0cfbd9025eb8e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60c30023801c590df0faa39e"
+  },
+  "name": "Ahead only",
+  "path": "images/4841b1cfb7a28316a7e9974e84c166fa",
+  "__v": 0
+}]

@@ -1,0 +1,3848 @@
+[{
+  "_id": {
+    "$oid": "6098ef5584854198b0352d45"
+  },
+  "numberOfCars": 3,
+  "averageSpeed": 90,
+  "location": {
+    "$oid": "60969a1c3bbc8533084f789e"
+  },
+  "imageSource": {
+    "$oid": "6098ec3984854198b0352d39"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6098ef7084854198b0352d46"
+  },
+  "numberOfCars": 2,
+  "averageSpeed": 110,
+  "location": {
+    "$oid": "6098ed9284854198b0352d3d"
+  },
+  "imageSource": {
+    "$oid": "6098ec5784854198b0352d3b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6098ef8784854198b0352d47"
+  },
+  "numberOfCars": 1,
+  "averageSpeed": 140,
+  "location": {
+    "$oid": "6098edce84854198b0352d3e"
+  },
+  "imageSource": {
+    "$oid": "6098ec5c84854198b0352d3c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5e72c5c9d54e347d748e"
+  },
+  "license_plate": [],
+  "numberOfCars": 5,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e66c5c9d54e347d7474"
+  },
+  "imageSource": {
+    "$oid": "60ba5e66c5c9d54e347d7475"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5e78c5c9d54e347d749b"
+  },
+  "license_plate": [],
+  "numberOfCars": 4,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e67c5c9d54e347d7476"
+  },
+  "imageSource": {
+    "$oid": "60ba5e67c5c9d54e347d7477"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5e7dc5c9d54e347d74a8"
+  },
+  "license_plate": [],
+  "numberOfCars": 8,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e68c5c9d54e347d7478"
+  },
+  "imageSource": {
+    "$oid": "60ba5e68c5c9d54e347d7479"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5e82c5c9d54e347d74b4"
+  },
+  "license_plate": [],
+  "numberOfCars": 5,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e69c5c9d54e347d747a"
+  },
+  "imageSource": {
+    "$oid": "60ba5e6ac5c9d54e347d747b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5e88c5c9d54e347d74c0"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e6bc5c9d54e347d747c"
+  },
+  "imageSource": {
+    "$oid": "60ba5e6bc5c9d54e347d747d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5e8dc5c9d54e347d74cd"
+  },
+  "license_plate": [],
+  "numberOfCars": 5,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e6cc5c9d54e347d747e"
+  },
+  "imageSource": {
+    "$oid": "60ba5e6cc5c9d54e347d747f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5e93c5c9d54e347d74db"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e6dc5c9d54e347d7480"
+  },
+  "imageSource": {
+    "$oid": "60ba5e6dc5c9d54e347d7481"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5e98c5c9d54e347d74e9"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e6dc5c9d54e347d7482"
+  },
+  "imageSource": {
+    "$oid": "60ba5e6ec5c9d54e347d7483"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5e9dc5c9d54e347d74f7"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e6ec5c9d54e347d7484"
+  },
+  "imageSource": {
+    "$oid": "60ba5e6fc5c9d54e347d7485"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ea3c5c9d54e347d7505"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e6fc5c9d54e347d7486"
+  },
+  "imageSource": {
+    "$oid": "60ba5e6fc5c9d54e347d7487"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ea8c5c9d54e347d7512"
+  },
+  "license_plate": [],
+  "numberOfCars": 4,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e70c5c9d54e347d7488"
+  },
+  "imageSource": {
+    "$oid": "60ba5e70c5c9d54e347d7489"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5eaec5c9d54e347d751f"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e71c5c9d54e347d748a"
+  },
+  "imageSource": {
+    "$oid": "60ba5e71c5c9d54e347d748b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5eb3c5c9d54e347d752d"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e71c5c9d54e347d748c"
+  },
+  "imageSource": {
+    "$oid": "60ba5e72c5c9d54e347d748d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5eb9c5c9d54e347d753b"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e72c5c9d54e347d748f"
+  },
+  "imageSource": {
+    "$oid": "60ba5e72c5c9d54e347d7490"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ebec5c9d54e347d754a"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e73c5c9d54e347d7491"
+  },
+  "imageSource": {
+    "$oid": "60ba5e73c5c9d54e347d7492"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ec4c5c9d54e347d7558"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e74c5c9d54e347d7493"
+  },
+  "imageSource": {
+    "$oid": "60ba5e74c5c9d54e347d7494"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ec9c5c9d54e347d7566"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e75c5c9d54e347d7495"
+  },
+  "imageSource": {
+    "$oid": "60ba5e75c5c9d54e347d7496"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ecfc5c9d54e347d756c"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e76c5c9d54e347d7497"
+  },
+  "imageSource": {
+    "$oid": "60ba5e76c5c9d54e347d7498"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ed4c5c9d54e347d756e"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e77c5c9d54e347d7499"
+  },
+  "imageSource": {
+    "$oid": "60ba5e77c5c9d54e347d749a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5edac5c9d54e347d7570"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e78c5c9d54e347d749c"
+  },
+  "imageSource": {
+    "$oid": "60ba5e78c5c9d54e347d749d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5edfc5c9d54e347d7571"
+  },
+  "license_plate": [],
+  "numberOfCars": 5,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e79c5c9d54e347d749e"
+  },
+  "imageSource": {
+    "$oid": "60ba5e79c5c9d54e347d749f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ee5c5c9d54e347d7572"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e79c5c9d54e347d74a0"
+  },
+  "imageSource": {
+    "$oid": "60ba5e7ac5c9d54e347d74a1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5eeac5c9d54e347d7574"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e7ac5c9d54e347d74a2"
+  },
+  "imageSource": {
+    "$oid": "60ba5e7bc5c9d54e347d74a3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5eefc5c9d54e347d7576"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e7bc5c9d54e347d74a4"
+  },
+  "imageSource": {
+    "$oid": "60ba5e7bc5c9d54e347d74a5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ef5c5c9d54e347d7577"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e7cc5c9d54e347d74a6"
+  },
+  "imageSource": {
+    "$oid": "60ba5e7cc5c9d54e347d74a7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5efac5c9d54e347d7578"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e7dc5c9d54e347d74a9"
+  },
+  "imageSource": {
+    "$oid": "60ba5e7dc5c9d54e347d74aa"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f00c5c9d54e347d7579"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e7ec5c9d54e347d74ab"
+  },
+  "imageSource": {
+    "$oid": "60ba5e7ec5c9d54e347d74ac"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f05c5c9d54e347d757b"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e7fc5c9d54e347d74ad"
+  },
+  "imageSource": {
+    "$oid": "60ba5e7fc5c9d54e347d74ae"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f0bc5c9d54e347d7580"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e80c5c9d54e347d74af"
+  },
+  "imageSource": {
+    "$oid": "60ba5e80c5c9d54e347d74b0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f10c5c9d54e347d7589"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e81c5c9d54e347d74b1"
+  },
+  "imageSource": {
+    "$oid": "60ba5e82c5c9d54e347d74b2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f15c5c9d54e347d758c"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e82c5c9d54e347d74b3"
+  },
+  "imageSource": {
+    "$oid": "60ba5e82c5c9d54e347d74b5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f1bc5c9d54e347d758f"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e83c5c9d54e347d74b6"
+  },
+  "imageSource": {
+    "$oid": "60ba5e83c5c9d54e347d74b7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f21c5c9d54e347d7594"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e84c5c9d54e347d74b8"
+  },
+  "imageSource": {
+    "$oid": "60ba5e84c5c9d54e347d74b9"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f27c5c9d54e347d7595"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e85c5c9d54e347d74ba"
+  },
+  "imageSource": {
+    "$oid": "60ba5e85c5c9d54e347d74bb"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f32c5c9d54e347d759c"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e87c5c9d54e347d74be"
+  },
+  "imageSource": {
+    "$oid": "60ba5e88c5c9d54e347d74bf"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f38c5c9d54e347d75a0"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e88c5c9d54e347d74c1"
+  },
+  "imageSource": {
+    "$oid": "60ba5e89c5c9d54e347d74c2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f3dc5c9d54e347d75a5"
+  },
+  "license_plate": [],
+  "numberOfCars": 4,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e89c5c9d54e347d74c3"
+  },
+  "imageSource": {
+    "$oid": "60ba5e8ac5c9d54e347d74c4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f42c5c9d54e347d75aa"
+  },
+  "license_plate": [],
+  "numberOfCars": 4,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e8bc5c9d54e347d74c5"
+  },
+  "imageSource": {
+    "$oid": "60ba5e8bc5c9d54e347d74c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f48c5c9d54e347d75ae"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e8bc5c9d54e347d74c7"
+  },
+  "imageSource": {
+    "$oid": "60ba5e8cc5c9d54e347d74c8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f4dc5c9d54e347d75b2"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e8cc5c9d54e347d74c9"
+  },
+  "imageSource": {
+    "$oid": "60ba5e8dc5c9d54e347d74ca"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f53c5c9d54e347d75b4"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e8dc5c9d54e347d74cb"
+  },
+  "imageSource": {
+    "$oid": "60ba5e8dc5c9d54e347d74cc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f58c5c9d54e347d75b5"
+  },
+  "license_plate": [],
+  "numberOfCars": 4,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e8ec5c9d54e347d74ce"
+  },
+  "imageSource": {
+    "$oid": "60ba5e8ec5c9d54e347d74cf"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f5dc5c9d54e347d75b6"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e8fc5c9d54e347d74d0"
+  },
+  "imageSource": {
+    "$oid": "60ba5e8fc5c9d54e347d74d1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f62c5c9d54e347d75b7"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e90c5c9d54e347d74d2"
+  },
+  "imageSource": {
+    "$oid": "60ba5e90c5c9d54e347d74d3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f67c5c9d54e347d75b8"
+  },
+  "license_plate": [],
+  "numberOfCars": 4,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e90c5c9d54e347d74d4"
+  },
+  "imageSource": {
+    "$oid": "60ba5e90c5c9d54e347d74d5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f6dc5c9d54e347d75b9"
+  },
+  "license_plate": [],
+  "numberOfCars": 8,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e91c5c9d54e347d74d6"
+  },
+  "imageSource": {
+    "$oid": "60ba5e91c5c9d54e347d74d7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f72c5c9d54e347d75ba"
+  },
+  "license_plate": [],
+  "numberOfCars": 4,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e92c5c9d54e347d74d8"
+  },
+  "imageSource": {
+    "$oid": "60ba5e92c5c9d54e347d74d9"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f77c5c9d54e347d75bb"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e93c5c9d54e347d74da"
+  },
+  "imageSource": {
+    "$oid": "60ba5e93c5c9d54e347d74dc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f7dc5c9d54e347d75bc"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e94c5c9d54e347d74dd"
+  },
+  "imageSource": {
+    "$oid": "60ba5e94c5c9d54e347d74de"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f82c5c9d54e347d75bd"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e94c5c9d54e347d74df"
+  },
+  "imageSource": {
+    "$oid": "60ba5e95c5c9d54e347d74e0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f87c5c9d54e347d75be"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e95c5c9d54e347d74e1"
+  },
+  "imageSource": {
+    "$oid": "60ba5e95c5c9d54e347d74e2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f8cc5c9d54e347d75bf"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e96c5c9d54e347d74e3"
+  },
+  "imageSource": {
+    "$oid": "60ba5e96c5c9d54e347d74e4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f91c5c9d54e347d75c0"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e97c5c9d54e347d74e5"
+  },
+  "imageSource": {
+    "$oid": "60ba5e97c5c9d54e347d74e6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f96c5c9d54e347d75c1"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e98c5c9d54e347d74e7"
+  },
+  "imageSource": {
+    "$oid": "60ba5e98c5c9d54e347d74e8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5f9bc5c9d54e347d75c2"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e99c5c9d54e347d74ea"
+  },
+  "imageSource": {
+    "$oid": "60ba5e99c5c9d54e347d74eb"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fa1c5c9d54e347d75c3"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e99c5c9d54e347d74ec"
+  },
+  "imageSource": {
+    "$oid": "60ba5e9ac5c9d54e347d74ed"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fa6c5c9d54e347d75c4"
+  },
+  "license_plate": [],
+  "numberOfCars": 6,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e9ac5c9d54e347d74ee"
+  },
+  "imageSource": {
+    "$oid": "60ba5e9ac5c9d54e347d74ef"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fabc5c9d54e347d75c5"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e9bc5c9d54e347d74f0"
+  },
+  "imageSource": {
+    "$oid": "60ba5e9bc5c9d54e347d74f1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fb0c5c9d54e347d75c6"
+  },
+  "license_plate": [],
+  "numberOfCars": 7,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e9cc5c9d54e347d74f2"
+  },
+  "imageSource": {
+    "$oid": "60ba5e9cc5c9d54e347d74f3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fb6c5c9d54e347d75c7"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e9cc5c9d54e347d74f4"
+  },
+  "imageSource": {
+    "$oid": "60ba5e9dc5c9d54e347d74f5"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fbcc5c9d54e347d75c8"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e9dc5c9d54e347d74f6"
+  },
+  "imageSource": {
+    "$oid": "60ba5e9ec5c9d54e347d74f8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fc2c5c9d54e347d75c9"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e9ec5c9d54e347d74f9"
+  },
+  "imageSource": {
+    "$oid": "60ba5e9ec5c9d54e347d74fa"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fc8c5c9d54e347d75ca"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5e9fc5c9d54e347d74fb"
+  },
+  "imageSource": {
+    "$oid": "60ba5e9fc5c9d54e347d74fc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fcec5c9d54e347d75cb"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea0c5c9d54e347d74fd"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea0c5c9d54e347d74fe"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fd3c5c9d54e347d75cc"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea1c5c9d54e347d74ff"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea1c5c9d54e347d7500"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fd8c5c9d54e347d75cd"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea1c5c9d54e347d7501"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea2c5c9d54e347d7502"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fdec5c9d54e347d75ce"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea2c5c9d54e347d7503"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea2c5c9d54e347d7504"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fe3c5c9d54e347d75cf"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea3c5c9d54e347d7506"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea3c5c9d54e347d7507"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fe9c5c9d54e347d75d0"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea4c5c9d54e347d7508"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea4c5c9d54e347d7509"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5feec5c9d54e347d75d1"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea5c5c9d54e347d750a"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea5c5c9d54e347d750b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ff4c5c9d54e347d75d2"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea6c5c9d54e347d750c"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea6c5c9d54e347d750d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5ff9c5c9d54e347d75d3"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea7c5c9d54e347d750e"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea7c5c9d54e347d750f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba5fffc5c9d54e347d75d4"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea8c5c9d54e347d7510"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea8c5c9d54e347d7511"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6004c5c9d54e347d75d5"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ea9c5c9d54e347d7513"
+  },
+  "imageSource": {
+    "$oid": "60ba5ea9c5c9d54e347d7514"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6009c5c9d54e347d75d6"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eaac5c9d54e347d7515"
+  },
+  "imageSource": {
+    "$oid": "60ba5eaac5c9d54e347d7516"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba600ec5c9d54e347d75d7"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eabc5c9d54e347d7517"
+  },
+  "imageSource": {
+    "$oid": "60ba5eabc5c9d54e347d7518"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6014c5c9d54e347d75d8"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eacc5c9d54e347d7519"
+  },
+  "imageSource": {
+    "$oid": "60ba5eacc5c9d54e347d751a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba601ac5c9d54e347d75d9"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eacc5c9d54e347d751b"
+  },
+  "imageSource": {
+    "$oid": "60ba5eadc5c9d54e347d751c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba601fc5c9d54e347d75da"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eadc5c9d54e347d751d"
+  },
+  "imageSource": {
+    "$oid": "60ba5eadc5c9d54e347d751e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6025c5c9d54e347d75db"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eaec5c9d54e347d7520"
+  },
+  "imageSource": {
+    "$oid": "60ba5eaec5c9d54e347d7521"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba602ac5c9d54e347d75dc"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eafc5c9d54e347d7522"
+  },
+  "imageSource": {
+    "$oid": "60ba5eafc5c9d54e347d7523"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6030c5c9d54e347d75dd"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb0c5c9d54e347d7524"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb0c5c9d54e347d7525"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6035c5c9d54e347d75de"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb0c5c9d54e347d7526"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb1c5c9d54e347d7527"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba603ac5c9d54e347d75df"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb1c5c9d54e347d7528"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb2c5c9d54e347d7529"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6040c5c9d54e347d75e0"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb2c5c9d54e347d752a"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb2c5c9d54e347d752b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6045c5c9d54e347d75e1"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb3c5c9d54e347d752c"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb3c5c9d54e347d752e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba604bc5c9d54e347d75e2"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb4c5c9d54e347d752f"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb4c5c9d54e347d7530"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6050c5c9d54e347d75e3"
+  },
+  "license_plate": [],
+  "numberOfCars": 5,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb5c5c9d54e347d7531"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb5c5c9d54e347d7532"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6055c5c9d54e347d75e4"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb5c5c9d54e347d7533"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb6c5c9d54e347d7534"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba605ac5c9d54e347d75e5"
+  },
+  "license_plate": [],
+  "numberOfCars": 8,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb6c5c9d54e347d7535"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb7c5c9d54e347d7536"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba605fc5c9d54e347d75e6"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb7c5c9d54e347d7537"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb8c5c9d54e347d7538"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6064c5c9d54e347d75e7"
+  },
+  "license_plate": [],
+  "numberOfCars": 6,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb8c5c9d54e347d7539"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb8c5c9d54e347d753a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6069c5c9d54e347d75e8"
+  },
+  "license_plate": [],
+  "numberOfCars": 4,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eb9c5c9d54e347d753c"
+  },
+  "imageSource": {
+    "$oid": "60ba5eb9c5c9d54e347d753d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba606ec5c9d54e347d75e9"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ebac5c9d54e347d753e"
+  },
+  "imageSource": {
+    "$oid": "60ba5ebac5c9d54e347d753f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6073c5c9d54e347d75ea"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ebbc5c9d54e347d7540"
+  },
+  "imageSource": {
+    "$oid": "60ba5ebbc5c9d54e347d7541"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6078c5c9d54e347d75eb"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ebbc5c9d54e347d7542"
+  },
+  "imageSource": {
+    "$oid": "60ba5ebcc5c9d54e347d7543"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba607dc5c9d54e347d75ec"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ebcc5c9d54e347d7544"
+  },
+  "imageSource": {
+    "$oid": "60ba5ebdc5c9d54e347d7545"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6082c5c9d54e347d75ed"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ebdc5c9d54e347d7546"
+  },
+  "imageSource": {
+    "$oid": "60ba5ebec5c9d54e347d7547"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6091c5c9d54e347d75ee"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec0c5c9d54e347d754d"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec0c5c9d54e347d754e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6096c5c9d54e347d75ef"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec1c5c9d54e347d754f"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec1c5c9d54e347d7550"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba609bc5c9d54e347d75f0"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec2c5c9d54e347d7551"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec2c5c9d54e347d7552"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60a0c5c9d54e347d75f1"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec2c5c9d54e347d7553"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec3c5c9d54e347d7554"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60a5c5c9d54e347d75f2"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec3c5c9d54e347d7555"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec3c5c9d54e347d7556"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60abc5c9d54e347d75f3"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec4c5c9d54e347d7557"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec4c5c9d54e347d7559"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60b1c5c9d54e347d75f4"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec4c5c9d54e347d755a"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec5c5c9d54e347d755b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60b8c5c9d54e347d75f5"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec5c5c9d54e347d755c"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec6c5c9d54e347d755d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60bec5c9d54e347d75f6"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec6c5c9d54e347d755e"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec6c5c9d54e347d755f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60c3c5c9d54e347d75f7"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec7c5c9d54e347d7560"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec7c5c9d54e347d7561"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60c9c5c9d54e347d75f8"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec8c5c9d54e347d7562"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec8c5c9d54e347d7563"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60cfc5c9d54e347d75f9"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ec9c5c9d54e347d7564"
+  },
+  "imageSource": {
+    "$oid": "60ba5ec9c5c9d54e347d7565"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60d4c5c9d54e347d75fa"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ecac5c9d54e347d7567"
+  },
+  "imageSource": {
+    "$oid": "60ba5ecac5c9d54e347d7568"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60d9c5c9d54e347d75fb"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ecbc5c9d54e347d7569"
+  },
+  "imageSource": {
+    "$oid": "60ba5eccc5c9d54e347d756a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60dec5c9d54e347d75fc"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ecdc5c9d54e347d756b"
+  },
+  "imageSource": {
+    "$oid": "60ba5ed1c5c9d54e347d756d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60e4c5c9d54e347d75fd"
+  },
+  "license_plate": [],
+  "numberOfCars": 10,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5ed4c5c9d54e347d756f"
+  },
+  "imageSource": {
+    "$oid": "60ba5ee6c5c9d54e347d7573"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60e9c5c9d54e347d75fe"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5eedc5c9d54e347d7575"
+  },
+  "imageSource": {
+    "$oid": "60ba5f02c5c9d54e347d757a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60eec5c9d54e347d75ff"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f08c5c9d54e347d757c"
+  },
+  "imageSource": {
+    "$oid": "60ba5f09c5c9d54e347d757d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60f3c5c9d54e347d7600"
+  },
+  "license_plate": [],
+  "numberOfCars": 5,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f09c5c9d54e347d757e"
+  },
+  "imageSource": {
+    "$oid": "60ba5f0ac5c9d54e347d757f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60f9c5c9d54e347d7601"
+  },
+  "license_plate": [],
+  "numberOfCars": 9,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f0bc5c9d54e347d7581"
+  },
+  "imageSource": {
+    "$oid": "60ba5f0bc5c9d54e347d7582"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba60ffc5c9d54e347d7602"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f0cc5c9d54e347d7583"
+  },
+  "imageSource": {
+    "$oid": "60ba5f0dc5c9d54e347d7584"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6104c5c9d54e347d7603"
+  },
+  "license_plate": [],
+  "numberOfCars": 7,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f0dc5c9d54e347d7585"
+  },
+  "imageSource": {
+    "$oid": "60ba5f0ec5c9d54e347d7586"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba610ac5c9d54e347d7604"
+  },
+  "license_plate": [],
+  "numberOfCars": 4,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f0fc5c9d54e347d7587"
+  },
+  "imageSource": {
+    "$oid": "60ba5f10c5c9d54e347d7588"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba610fc5c9d54e347d7605"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f11c5c9d54e347d758a"
+  },
+  "imageSource": {
+    "$oid": "60ba5f15c5c9d54e347d758b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6115c5c9d54e347d7606"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f18c5c9d54e347d758d"
+  },
+  "imageSource": {
+    "$oid": "60ba5f1ac5c9d54e347d758e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba611bc5c9d54e347d7607"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f1bc5c9d54e347d7590"
+  },
+  "imageSource": {
+    "$oid": "60ba5f1cc5c9d54e347d7591"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6121c5c9d54e347d7608"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f1ec5c9d54e347d7592"
+  },
+  "imageSource": {
+    "$oid": "60ba5f21c5c9d54e347d7593"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6126c5c9d54e347d7609"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f29c5c9d54e347d7596"
+  },
+  "imageSource": {
+    "$oid": "60ba5f2dc5c9d54e347d7597"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6143c5c9d54e347d760a"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f3ac5c9d54e347d75a2"
+  },
+  "imageSource": {
+    "$oid": "60ba5f3bc5c9d54e347d75a3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba614ac5c9d54e347d760b"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f3dc5c9d54e347d75a4"
+  },
+  "imageSource": {
+    "$oid": "60ba5f3ec5c9d54e347d75a6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6150c5c9d54e347d760c"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f3fc5c9d54e347d75a7"
+  },
+  "imageSource": {
+    "$oid": "60ba5f40c5c9d54e347d75a8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6156c5c9d54e347d760d"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f41c5c9d54e347d75a9"
+  },
+  "imageSource": {
+    "$oid": "60ba5f44c5c9d54e347d75ab"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba615cc5c9d54e347d760e"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f46c5c9d54e347d75ac"
+  },
+  "imageSource": {
+    "$oid": "60ba5f48c5c9d54e347d75ad"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ba6162c5c9d54e347d760f"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60ba5f49c5c9d54e347d75af"
+  },
+  "imageSource": {
+    "$oid": "60ba5f4bc5c9d54e347d75b0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60cc85134a678b660c8e6226"
+  },
+  "license_plate": [],
+  "numberOfCars": 11,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60cc85054a678b660c8e6224"
+  },
+  "imageSource": {
+    "$oid": "60cc85054a678b660c8e6225"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60cc85a44a678b660c8e622a"
+  },
+  "license_plate": [],
+  "numberOfCars": 10,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "60cc859c4a678b660c8e6228"
+  },
+  "imageSource": {
+    "$oid": "60cc859c4a678b660c8e6229"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d754e78f999d3b0015481b"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754c98f999d3b0015477f"
+  },
+  "imageSource": {
+    "$oid": "61d754c98f999d3b00154780"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d754f98f999d3b00154887"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ca8f999d3b00154781"
+  },
+  "imageSource": {
+    "$oid": "61d754cb8f999d3b00154782"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755088f999d3b00154899"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754cb8f999d3b00154783"
+  },
+  "imageSource": {
+    "$oid": "61d754cb8f999d3b00154784"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755148f999d3b0015489a"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754cc8f999d3b00154785"
+  },
+  "imageSource": {
+    "$oid": "61d754cc8f999d3b00154786"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7551c8f999d3b0015489b"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754cc8f999d3b00154787"
+  },
+  "imageSource": {
+    "$oid": "61d754cc8f999d3b00154788"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755238f999d3b0015489c"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754cd8f999d3b00154789"
+  },
+  "imageSource": {
+    "$oid": "61d754cd8f999d3b0015478a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7552e8f999d3b0015489d"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ce8f999d3b0015478b"
+  },
+  "imageSource": {
+    "$oid": "61d754ce8f999d3b0015478d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755358f999d3b0015489e"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ce8f999d3b0015478c"
+  },
+  "imageSource": {
+    "$oid": "61d754ce8f999d3b0015478e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7553c8f999d3b0015489f"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ce8f999d3b0015478f"
+  },
+  "imageSource": {
+    "$oid": "61d754ce8f999d3b00154790"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755448f999d3b001548a0"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754cf8f999d3b00154791"
+  },
+  "imageSource": {
+    "$oid": "61d754cf8f999d3b00154792"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7554e8f999d3b001548a1"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754cf8f999d3b00154793"
+  },
+  "imageSource": {
+    "$oid": "61d754cf8f999d3b00154794"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7555b8f999d3b001548a2"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754cf8f999d3b00154795"
+  },
+  "imageSource": {
+    "$oid": "61d754d08f999d3b00154796"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755678f999d3b001548a3"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d08f999d3b00154797"
+  },
+  "imageSource": {
+    "$oid": "61d754d08f999d3b00154798"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7556f8f999d3b001548a4"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d08f999d3b00154799"
+  },
+  "imageSource": {
+    "$oid": "61d754d08f999d3b0015479b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755798f999d3b001548a5"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d08f999d3b0015479a"
+  },
+  "imageSource": {
+    "$oid": "61d754d08f999d3b0015479c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7558a8f999d3b001548a6"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d18f999d3b0015479d"
+  },
+  "imageSource": {
+    "$oid": "61d754d18f999d3b0015479e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755978f999d3b001548a7"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d18f999d3b001547a0"
+  },
+  "imageSource": {
+    "$oid": "61d754d18f999d3b001547a1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755a68f999d3b001548a8"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d18f999d3b0015479f"
+  },
+  "imageSource": {
+    "$oid": "61d754d18f999d3b001547a2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755af8f999d3b001548a9"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d28f999d3b001547a3"
+  },
+  "imageSource": {
+    "$oid": "61d754d28f999d3b001547a4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755ba8f999d3b001548aa"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d28f999d3b001547a5"
+  },
+  "imageSource": {
+    "$oid": "61d754d28f999d3b001547a6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755cb8f999d3b001548ab"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d28f999d3b001547a7"
+  },
+  "imageSource": {
+    "$oid": "61d754d38f999d3b001547a8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755dd8f999d3b001548ac"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d38f999d3b001547a9"
+  },
+  "imageSource": {
+    "$oid": "61d754d38f999d3b001547aa"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755e98f999d3b001548ad"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d48f999d3b001547ab"
+  },
+  "imageSource": {
+    "$oid": "61d754d48f999d3b001547ac"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755f18f999d3b001548ae"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d48f999d3b001547ad"
+  },
+  "imageSource": {
+    "$oid": "61d754d48f999d3b001547ae"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d755fa8f999d3b001548af"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d48f999d3b001547af"
+  },
+  "imageSource": {
+    "$oid": "61d754d58f999d3b001547b0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756028f999d3b001548b0"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d58f999d3b001547b1"
+  },
+  "imageSource": {
+    "$oid": "61d754d58f999d3b001547b3"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7560b8f999d3b001548b1"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d58f999d3b001547b2"
+  },
+  "imageSource": {
+    "$oid": "61d754d58f999d3b001547b4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756178f999d3b001548b2"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d68f999d3b001547b5"
+  },
+  "imageSource": {
+    "$oid": "61d754d68f999d3b001547b6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7561f8f999d3b001548b3"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d68f999d3b001547b7"
+  },
+  "imageSource": {
+    "$oid": "61d754d68f999d3b001547b8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756338f999d3b001548b4"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d68f999d3b001547b9"
+  },
+  "imageSource": {
+    "$oid": "61d754d68f999d3b001547ba"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756408f999d3b001548b5"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d78f999d3b001547bb"
+  },
+  "imageSource": {
+    "$oid": "61d754d78f999d3b001547bc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7564a8f999d3b001548b6"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d78f999d3b001547bd"
+  },
+  "imageSource": {
+    "$oid": "61d754d78f999d3b001547be"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756528f999d3b001548b7"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d88f999d3b001547c0"
+  },
+  "imageSource": {
+    "$oid": "61d754d88f999d3b001547c1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7565a8f999d3b001548b8"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d88f999d3b001547bf"
+  },
+  "imageSource": {
+    "$oid": "61d754d88f999d3b001547c2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756648f999d3b001548b9"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d88f999d3b001547c3"
+  },
+  "imageSource": {
+    "$oid": "61d754d88f999d3b001547c4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7566b8f999d3b001548ba"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d88f999d3b001547c5"
+  },
+  "imageSource": {
+    "$oid": "61d754d98f999d3b001547c6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756728f999d3b001548bb"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d98f999d3b001547c7"
+  },
+  "imageSource": {
+    "$oid": "61d754d98f999d3b001547c8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7567a8f999d3b001548bc"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d98f999d3b001547c9"
+  },
+  "imageSource": {
+    "$oid": "61d754d98f999d3b001547cb"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756818f999d3b001548bd"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754d98f999d3b001547ca"
+  },
+  "imageSource": {
+    "$oid": "61d754d98f999d3b001547cc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756878f999d3b001548be"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754da8f999d3b001547cd"
+  },
+  "imageSource": {
+    "$oid": "61d754da8f999d3b001547ce"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7568e8f999d3b001548bf"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754da8f999d3b001547cf"
+  },
+  "imageSource": {
+    "$oid": "61d754da8f999d3b001547d0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756978f999d3b001548c0"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754db8f999d3b001547d1"
+  },
+  "imageSource": {
+    "$oid": "61d754db8f999d3b001547d2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7569e8f999d3b001548c1"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754db8f999d3b001547d3"
+  },
+  "imageSource": {
+    "$oid": "61d754db8f999d3b001547d4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756a58f999d3b001548c2"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754dc8f999d3b001547d5"
+  },
+  "imageSource": {
+    "$oid": "61d754dc8f999d3b001547d7"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756ab8f999d3b001548c3"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754dc8f999d3b001547d6"
+  },
+  "imageSource": {
+    "$oid": "61d754dc8f999d3b001547d8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756b28f999d3b001548c4"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754dc8f999d3b001547d9"
+  },
+  "imageSource": {
+    "$oid": "61d754dc8f999d3b001547db"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756b88f999d3b001548c5"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754dc8f999d3b001547da"
+  },
+  "imageSource": {
+    "$oid": "61d754dc8f999d3b001547dc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756bf8f999d3b001548c6"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754dd8f999d3b001547dd"
+  },
+  "imageSource": {
+    "$oid": "61d754dd8f999d3b001547df"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756c88f999d3b001548c7"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754dd8f999d3b001547de"
+  },
+  "imageSource": {
+    "$oid": "61d754dd8f999d3b001547e0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756d08f999d3b001548c8"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754dd8f999d3b001547e1"
+  },
+  "imageSource": {
+    "$oid": "61d754de8f999d3b001547e2"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756d78f999d3b001548c9"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754de8f999d3b001547e3"
+  },
+  "imageSource": {
+    "$oid": "61d754de8f999d3b001547e4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756de8f999d3b001548ca"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754de8f999d3b001547e5"
+  },
+  "imageSource": {
+    "$oid": "61d754de8f999d3b001547e6"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756e58f999d3b001548cb"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754de8f999d3b001547e7"
+  },
+  "imageSource": {
+    "$oid": "61d754de8f999d3b001547e8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756ec8f999d3b001548cc"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754de8f999d3b001547e9"
+  },
+  "imageSource": {
+    "$oid": "61d754df8f999d3b001547eb"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756f28f999d3b001548cd"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754df8f999d3b001547ea"
+  },
+  "imageSource": {
+    "$oid": "61d754df8f999d3b001547ec"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d756f98f999d3b001548ce"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754df8f999d3b001547ed"
+  },
+  "imageSource": {
+    "$oid": "61d754df8f999d3b001547ee"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757018f999d3b001548cf"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e08f999d3b001547ef"
+  },
+  "imageSource": {
+    "$oid": "61d754e08f999d3b001547f0"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7570f8f999d3b001548d0"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e08f999d3b001547f3"
+  },
+  "imageSource": {
+    "$oid": "61d754e08f999d3b001547f4"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7571e8f999d3b001548d1"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e08f999d3b001547f6"
+  },
+  "imageSource": {
+    "$oid": "61d754e08f999d3b001547f8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757258f999d3b001548d2"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e18f999d3b001547f9"
+  },
+  "imageSource": {
+    "$oid": "61d754e18f999d3b001547fb"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7572d8f999d3b001548d3"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e18f999d3b001547fa"
+  },
+  "imageSource": {
+    "$oid": "61d754e18f999d3b001547fc"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757348f999d3b001548d4"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e28f999d3b001547fd"
+  },
+  "imageSource": {
+    "$oid": "61d754e28f999d3b001547fe"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7573c8f999d3b001548d5"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e28f999d3b001547ff"
+  },
+  "imageSource": {
+    "$oid": "61d754e28f999d3b00154800"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757448f999d3b001548d6"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e28f999d3b00154801"
+  },
+  "imageSource": {
+    "$oid": "61d754e38f999d3b00154802"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7574b8f999d3b001548d7"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e38f999d3b00154803"
+  },
+  "imageSource": {
+    "$oid": "61d754e38f999d3b00154804"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757528f999d3b001548d8"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e38f999d3b00154805"
+  },
+  "imageSource": {
+    "$oid": "61d754e38f999d3b00154806"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757598f999d3b001548d9"
+  },
+  "license_plate": [],
+  "numberOfCars": 3,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e38f999d3b00154807"
+  },
+  "imageSource": {
+    "$oid": "61d754e38f999d3b00154808"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757618f999d3b001548da"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e38f999d3b00154809"
+  },
+  "imageSource": {
+    "$oid": "61d754e48f999d3b0015480a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757688f999d3b001548db"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e48f999d3b0015480b"
+  },
+  "imageSource": {
+    "$oid": "61d754e48f999d3b0015480c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757718f999d3b001548dc"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e48f999d3b0015480d"
+  },
+  "imageSource": {
+    "$oid": "61d754e58f999d3b0015480e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757778f999d3b001548dd"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e58f999d3b0015480f"
+  },
+  "imageSource": {
+    "$oid": "61d754e58f999d3b00154811"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7577d8f999d3b001548de"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e58f999d3b00154810"
+  },
+  "imageSource": {
+    "$oid": "61d754e58f999d3b00154812"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757838f999d3b001548df"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e68f999d3b00154813"
+  },
+  "imageSource": {
+    "$oid": "61d754e68f999d3b00154815"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757898f999d3b001548e0"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e68f999d3b00154814"
+  },
+  "imageSource": {
+    "$oid": "61d754e68f999d3b00154816"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7578f8f999d3b001548e1"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e68f999d3b00154817"
+  },
+  "imageSource": {
+    "$oid": "61d754e68f999d3b00154819"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757968f999d3b001548e2"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e68f999d3b00154818"
+  },
+  "imageSource": {
+    "$oid": "61d754e78f999d3b0015481a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7579c8f999d3b001548e3"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e78f999d3b0015481c"
+  },
+  "imageSource": {
+    "$oid": "61d754e78f999d3b0015481d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757a28f999d3b001548e4"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e78f999d3b0015481e"
+  },
+  "imageSource": {
+    "$oid": "61d754e78f999d3b0015481f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757a88f999d3b001548e5"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e88f999d3b00154820"
+  },
+  "imageSource": {
+    "$oid": "61d754e88f999d3b00154821"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757af8f999d3b001548e6"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e88f999d3b00154822"
+  },
+  "imageSource": {
+    "$oid": "61d754e88f999d3b00154823"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757b78f999d3b001548e7"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e88f999d3b00154824"
+  },
+  "imageSource": {
+    "$oid": "61d754e88f999d3b00154825"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757bd8f999d3b001548e8"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e98f999d3b00154826"
+  },
+  "imageSource": {
+    "$oid": "61d754e98f999d3b00154827"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757c38f999d3b001548e9"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e98f999d3b00154828"
+  },
+  "imageSource": {
+    "$oid": "61d754e98f999d3b00154829"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757cb8f999d3b001548ea"
+  },
+  "license_plate": [],
+  "numberOfCars": 5,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e98f999d3b0015482a"
+  },
+  "imageSource": {
+    "$oid": "61d754e98f999d3b0015482c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757d28f999d3b001548eb"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754e98f999d3b0015482b"
+  },
+  "imageSource": {
+    "$oid": "61d754e98f999d3b0015482d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757d98f999d3b001548ec"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ea8f999d3b0015482e"
+  },
+  "imageSource": {
+    "$oid": "61d754ea8f999d3b0015482f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757df8f999d3b001548ed"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ea8f999d3b00154830"
+  },
+  "imageSource": {
+    "$oid": "61d754ea8f999d3b00154831"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757e68f999d3b001548ee"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ea8f999d3b00154832"
+  },
+  "imageSource": {
+    "$oid": "61d754ea8f999d3b00154833"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757ec8f999d3b001548ef"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754eb8f999d3b00154834"
+  },
+  "imageSource": {
+    "$oid": "61d754eb8f999d3b00154836"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757f38f999d3b001548f0"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754eb8f999d3b00154835"
+  },
+  "imageSource": {
+    "$oid": "61d754eb8f999d3b00154837"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d757f98f999d3b001548f1"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754eb8f999d3b00154838"
+  },
+  "imageSource": {
+    "$oid": "61d754eb8f999d3b00154839"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758008f999d3b001548f2"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754eb8f999d3b0015483a"
+  },
+  "imageSource": {
+    "$oid": "61d754eb8f999d3b0015483b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758068f999d3b001548f3"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ec8f999d3b0015483c"
+  },
+  "imageSource": {
+    "$oid": "61d754ec8f999d3b0015483d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7580c8f999d3b001548f4"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ec8f999d3b0015483e"
+  },
+  "imageSource": {
+    "$oid": "61d754ec8f999d3b0015483f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758128f999d3b001548f5"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ec8f999d3b00154840"
+  },
+  "imageSource": {
+    "$oid": "61d754ec8f999d3b00154841"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758188f999d3b001548f6"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ed8f999d3b00154842"
+  },
+  "imageSource": {
+    "$oid": "61d754ed8f999d3b00154844"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7581e8f999d3b001548f7"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ed8f999d3b00154843"
+  },
+  "imageSource": {
+    "$oid": "61d754ed8f999d3b00154845"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758248f999d3b001548f8"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ed8f999d3b00154846"
+  },
+  "imageSource": {
+    "$oid": "61d754ed8f999d3b00154848"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7582a8f999d3b001548f9"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ed8f999d3b00154847"
+  },
+  "imageSource": {
+    "$oid": "61d754ed8f999d3b00154849"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758308f999d3b001548fa"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ee8f999d3b0015484a"
+  },
+  "imageSource": {
+    "$oid": "61d754ee8f999d3b0015484c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7583d8f999d3b001548fb"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ee8f999d3b0015484b"
+  },
+  "imageSource": {
+    "$oid": "61d754ee8f999d3b0015484d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758458f999d3b001548fc"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ee8f999d3b0015484e"
+  },
+  "imageSource": {
+    "$oid": "61d754ee8f999d3b00154850"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7584c8f999d3b001548fd"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ee8f999d3b0015484f"
+  },
+  "imageSource": {
+    "$oid": "61d754ee8f999d3b00154851"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758528f999d3b001548fe"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ef8f999d3b00154852"
+  },
+  "imageSource": {
+    "$oid": "61d754ef8f999d3b00154853"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758598f999d3b001548ff"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ef8f999d3b00154854"
+  },
+  "imageSource": {
+    "$oid": "61d754ef8f999d3b00154856"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758648f999d3b00154900"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754ef8f999d3b00154855"
+  },
+  "imageSource": {
+    "$oid": "61d754ef8f999d3b00154857"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7586a8f999d3b00154901"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f08f999d3b00154858"
+  },
+  "imageSource": {
+    "$oid": "61d754f08f999d3b00154859"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758708f999d3b00154902"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f18f999d3b0015485a"
+  },
+  "imageSource": {
+    "$oid": "61d754f18f999d3b0015485b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758768f999d3b00154903"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f18f999d3b0015485d"
+  },
+  "imageSource": {
+    "$oid": "61d754f18f999d3b0015485e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7587e8f999d3b00154904"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f18f999d3b0015485c"
+  },
+  "imageSource": {
+    "$oid": "61d754f18f999d3b0015485f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758868f999d3b00154905"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f28f999d3b00154861"
+  },
+  "imageSource": {
+    "$oid": "61d754f28f999d3b00154862"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7588f8f999d3b00154906"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f28f999d3b00154860"
+  },
+  "imageSource": {
+    "$oid": "61d754f28f999d3b00154863"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758978f999d3b00154907"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f28f999d3b00154864"
+  },
+  "imageSource": {
+    "$oid": "61d754f38f999d3b00154866"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758a28f999d3b00154908"
+  },
+  "license_plate": [],
+  "numberOfCars": 5,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f38f999d3b00154865"
+  },
+  "imageSource": {
+    "$oid": "61d754f38f999d3b00154867"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758b08f999d3b00154909"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f38f999d3b00154868"
+  },
+  "imageSource": {
+    "$oid": "61d754f38f999d3b0015486a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758be8f999d3b0015490a"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f38f999d3b00154869"
+  },
+  "imageSource": {
+    "$oid": "61d754f38f999d3b0015486b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758c88f999d3b0015490b"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f48f999d3b0015486c"
+  },
+  "imageSource": {
+    "$oid": "61d754f48f999d3b0015486d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758d08f999d3b0015490c"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f48f999d3b0015486e"
+  },
+  "imageSource": {
+    "$oid": "61d754f48f999d3b0015486f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758d78f999d3b0015490d"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f48f999d3b00154870"
+  },
+  "imageSource": {
+    "$oid": "61d754f48f999d3b00154871"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758df8f999d3b0015490e"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f58f999d3b00154872"
+  },
+  "imageSource": {
+    "$oid": "61d754f58f999d3b00154873"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758e78f999d3b0015490f"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f58f999d3b00154874"
+  },
+  "imageSource": {
+    "$oid": "61d754f68f999d3b00154875"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d758f58f999d3b00154910"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f68f999d3b00154876"
+  },
+  "imageSource": {
+    "$oid": "61d754f68f999d3b00154877"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759038f999d3b00154911"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f68f999d3b00154878"
+  },
+  "imageSource": {
+    "$oid": "61d754f68f999d3b00154879"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759118f999d3b00154912"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f78f999d3b0015487a"
+  },
+  "imageSource": {
+    "$oid": "61d754f78f999d3b0015487c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7591f8f999d3b00154913"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f78f999d3b0015487b"
+  },
+  "imageSource": {
+    "$oid": "61d754f78f999d3b0015487d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7592a8f999d3b00154914"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f78f999d3b0015487e"
+  },
+  "imageSource": {
+    "$oid": "61d754f78f999d3b0015487f"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759368f999d3b00154915"
+  },
+  "license_plate": [],
+  "numberOfCars": 2,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f78f999d3b00154880"
+  },
+  "imageSource": {
+    "$oid": "61d754f88f999d3b00154881"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759458f999d3b00154916"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f88f999d3b00154882"
+  },
+  "imageSource": {
+    "$oid": "61d754f88f999d3b00154883"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759518f999d3b00154917"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f88f999d3b00154884"
+  },
+  "imageSource": {
+    "$oid": "61d754f98f999d3b00154886"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7595c8f999d3b00154918"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f98f999d3b00154885"
+  },
+  "imageSource": {
+    "$oid": "61d754f98f999d3b00154888"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759698f999d3b00154919"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f98f999d3b00154889"
+  },
+  "imageSource": {
+    "$oid": "61d754f98f999d3b0015488b"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759748f999d3b0015491a"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754f98f999d3b0015488a"
+  },
+  "imageSource": {
+    "$oid": "61d754f98f999d3b0015488c"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7597e8f999d3b0015491b"
+  },
+  "license_plate": [],
+  "numberOfCars": 1,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754fa8f999d3b0015488d"
+  },
+  "imageSource": {
+    "$oid": "61d754fa8f999d3b0015488e"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759898f999d3b0015491c"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754fa8f999d3b0015488f"
+  },
+  "imageSource": {
+    "$oid": "61d754fa8f999d3b00154890"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759938f999d3b0015491d"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754fb8f999d3b00154891"
+  },
+  "imageSource": {
+    "$oid": "61d754fb8f999d3b00154892"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d7599e8f999d3b0015491e"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754fc8f999d3b00154893"
+  },
+  "imageSource": {
+    "$oid": "61d754fc8f999d3b00154894"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759a88f999d3b0015491f"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754fc8f999d3b00154895"
+  },
+  "imageSource": {
+    "$oid": "61d754fc8f999d3b00154896"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61d759b38f999d3b00154920"
+  },
+  "license_plate": [],
+  "numberOfCars": 0,
+  "averageSpeed": 0,
+  "location": {
+    "$oid": "61d754fd8f999d3b00154897"
+  },
+  "imageSource": {
+    "$oid": "61d754fd8f999d3b00154898"
+  },
+  "__v": 0
+}]
