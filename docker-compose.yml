@@ -17,6 +17,7 @@ services:
     build: ./Backend/ObjectRecognition
 
   react:
+    container_name: reactapp
     image: react_img
     build: ./Frontend/react_frontend
     command: "npm start"
