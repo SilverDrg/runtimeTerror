@@ -5,7 +5,7 @@ function MarkerTrafficSigns(props) {
     const [trafficSigns, setTrafficSigns] = useState([]);
     useEffect(function() {
         const getTrafficSigns = async function() {
-            const res = await fetch('http://api:3001/trafficsign');
+            const res = await fetch('http://api/trafficsign');
             const data = await res.json();
             console.log("cars from api: \n" + data);
             setTrafficSigns(data);
