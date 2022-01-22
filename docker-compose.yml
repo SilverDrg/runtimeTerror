@@ -26,8 +26,8 @@ services:
     command: "npm start"
     ports:
       - "3000:3000"
-    links:
-      - "api"
+    # links:
+    #   - "api"
     # networks:
     #   - roadscannernetwork
   mongo:
