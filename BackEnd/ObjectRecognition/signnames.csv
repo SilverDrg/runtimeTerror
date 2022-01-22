@@ -1,44 +1,44 @@
 ClassId,SignName
-0,Speed limit (20km/h)
-1,Speed limit (30km/h)
-2,Speed limit (50km/h)
-3,Speed limit (60km/h)
-4,Speed limit (70km/h)
-5,Speed limit (80km/h)
-6,End of speed limit (80km/h)
-7,Speed limit (100km/h)
-8,Speed limit (120km/h)
-9,No passing
-10,No passing for vechiles over 3.5 metric tons
-11,Right-of-way at the next intersection
-12,Priority road
+0,SpeedLimit20
+1,SpeedLimit30
+2,SpeedLimit50
+3,SpeedLimit60
+4,SpeedLimit70
+5,SpeedLimit80
+6,EndOSpeedLimit80
+7,SpeedLimit100
+8,SpeedLimit110
+9,NoOvertaking
+10,HeavyVehiclesNoPassing
+11,IntersectionWithMinorRoad
+12,MainRoad
 13,Yield
 14,Stop
-15,No vehicles
-16,Vechiles over 3.5 metric tons prohibited
-17,No entry
-18,General caution
-19,Dangerous curve to the left
-20,Dangerous curve to the right
-21,Double curve
-22,Bumpy road
-23,Slippery road
-24,Road narrows on the right
-25,Road work
-26,Traffic signals
+15,NoEntryForVehicles
+16,NoLorries
+17,NoEntry
+18,Danger
+19,RoadLeft
+20,RoadRight
+21,SharpTurn
+22,UnevenRoad
+23,SlipperyRoad
+24,RoadNarrows
+25,RoadWorks
+26,TrafficLights
 27,Pedestrians
-28,Children crossing
-29,Bicycles crossing
-30,Beware of ice/snow
-31,Wild animals crossing
-32,End of all speed and passing limits
-33,Turn right ahead
-34,Turn left ahead
-35,Ahead only
-36,Go straight or right
-37,Go straight or left
-38,Keep right
-39,Keep left
-40,Roundabout mandatory
-41,End of no passing
-42,End of no passing by vechiles over 3.5 metric tons
+28,School
+29,Cyclist
+30,FreezingRoad
+31,WildAnimals
+32,Nowhere
+33,RightOnly
+34,LeftOnly
+35,ArrowUp
+36,StraightOrRightOnly
+37,StraightOrLeftOnly
+38,ArrowBottomRight
+39,ArrowBottomLeft
+40,RoundAbout
+41,NoPassing
+42,EndNoPassingHeavy
