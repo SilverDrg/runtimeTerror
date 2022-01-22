@@ -12,10 +12,13 @@ services:
       - tensor
     depends_on:
       - mongo
+    networks:
+      - roadscannernetwork
   tensor:
     container_name: tensor
     build: ./BackEnd/ObjectRecognition
-
+    networks:
+      - roadscannernetwork
   react:
     container_name: reactapp
     image: react_img
@@ -25,11 +28,15 @@ services:
       - "3000:3000"
     links:
       - "api"
+    networks:
+      - roadscannernetwork
   mongo:
     container_name: mongo
     image: mongo
     ports:
       - "27017:27017"
+    networks:
+      - roadscannernetwork
 networks:
   roadscannernetwork:
     driver: bridge
