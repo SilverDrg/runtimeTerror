@@ -11,6 +11,8 @@ services:
     container_name: tensor
     build: ./BackEnd/ObjectRecognition
     hostname: tensor
+    ports:
+      - "8000:8000"
 
   api:
     container_name: api
