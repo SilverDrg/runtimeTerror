@@ -4,7 +4,7 @@ function Image(props) {
     var image = props.image;
     return (
         <div className="container col-sm-5 mx-auto my-3 py-3 card">
-            <img src={'http://20.203.144.23:3001/' + image.src} alt={image.link} style={{maxHeight: 400, maxWidth: 600}} className="card-img-top mx-auto"></img>
+            <img src={'http://api:3001/' + image.src} alt={image.link} style={{maxHeight: 400, maxWidth: 600}} className="card-img-top mx-auto"></img>
             <div className="card-body">
                 <h4 className="card-title my-2">{image.src}</h4>
                 <p className="card-text">{image.link}</p>
