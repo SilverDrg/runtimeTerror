@@ -7,7 +7,7 @@ function MarkerTrafficSign(props) {
 
     return (
         <CircleMarker center={[trafficSign.location.latitude, trafficSign.location.longditude]} pathOptions={fillBlueOptions} radius={10}>
-            <Popup><img src={"http://api:3001/" + trafficSign.image.path} alt="Stop sign" style={{height: "48px", width: "48px"}}></img></Popup>
+            <Popup><img src={"http://20.203.144.23:3001/" + trafficSign.image.path} alt="Stop sign" style={{height: "48px", width: "48px"}}></img></Popup>
         </CircleMarker>
     );
 }
