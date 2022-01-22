@@ -25,18 +25,19 @@ var scraperRouter = require('./routes/ScraperRoutes');
 
 var app = express();
 
-var allowedOrigins = ['http://localhost:3000', 'http://localhost:3001'];
-app.use(cors({
-  credentials: true,
-  origin: function(origin, callback) {
-    if(!origin) return callback(null, true);
-    // if(allowedOrigins.indexOf(origin) === -1) {
-    //   var msg = 'The CORS policy for this site does not allow access from the specified origin';
-    //   return callback(new Error(msg), false);
-    // }
-    return callback(null, true);
-  }
-}))
+// var allowedOrigins = ['http://20.203.144.23:3000', 'http://20.203.144.23:3001'];
+// app.use(cors({
+//   credentials: true,
+//   origin: function(origin, callback) {
+//     if(!origin) return callback(null, true);
+//     if(allowedOrigins.indexOf(origin) === -1) {
+//       var msg = 'The CORS policy for this site does not allow access from the specified origin';
+//       return callback(new Error(msg), false);
+//     }
+//     return callback(null, true);
+//   }
+// }))
+app.options('*', cors())
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
