@@ -2,7 +2,7 @@ version: "3"
 services:
   api:
     container_name: api
-    build: ./Backend/API
+    build: ./BackEnd/API
     environment:
      - MONGO_URI=mongodb://mongo:27017/projektnaNaloga
     ports:
@@ -14,12 +14,12 @@ services:
       - mongo
   tensor:
     container_name: tensor
-    build: ./Backend/ObjectRecognition
+    build: ./BackEnd/ObjectRecognition
 
   react:
     container_name: reactapp
     image: react_img
-    build: ./Frontend/react_frontend
+    build: ./FrontEnd/react_frontend
     command: "npm start"
     ports:
       - "3000:3000"
