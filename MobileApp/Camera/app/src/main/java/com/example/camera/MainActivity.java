@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton btn;
     OkHttp newHttp;
     final Handler handler = new Handler();
-    public static String API_URL = "http://164.8.161.183:3001/";
+    public static String API_URL = "http://192.168.0.107:3001/";
 
     FusedLocationProviderClient fusedLocationProviderClient;
     boolean updateOn = false; //variable to remember if we are tracking location on not
