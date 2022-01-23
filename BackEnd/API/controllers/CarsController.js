@@ -69,7 +69,7 @@ module.exports = {
         var locations = []; // GPS objects
         var distances = []; // Distance of each object from original coords
 
-        consol.log("find 1");
+        console.log("find 1");
 
         GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $lte: longitude }}, function (err1, location1) {
             if (err1) {
@@ -79,7 +79,7 @@ module.exports = {
                 });
             }
 
-            consol.log("find 2");
+            console.log("find 2");
 
             GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $gt: longitude }}, function (err2, location2) {
                 if (err2) {
@@ -89,7 +89,7 @@ module.exports = {
                     });
                 }
 
-                consol.log("find 3");
+                console.log("find 3");
 
                 GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $lte: longitude }}, function (err3, location3) {
                     if (err3) {
@@ -99,7 +99,7 @@ module.exports = {
                         });
                     }
 
-                    consol.log("find 4");
+                    console.log("find 4");
 
                     GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $gt: longitude }}, function (err4, location4) {
                         if (err4) {
@@ -109,7 +109,7 @@ module.exports = {
                             });
                         }
 
-                        consol.log("found all 4");
+                        console.log("found all 4");
 
                         if (!location1) {
                             console.log('No such GPS bottomLeftQuadron');
@@ -153,7 +153,7 @@ module.exports = {
 
                         //dist = sqrt((x2-x1)^2 + (y2-y1)^2)
 
-                        consol.log("find closest");
+                        console.log("find closest");
                     
                         for (let index = 0; index < distances.length; index++) {
                             if (!distances[index] && nearest > distances[index] && distances[index] < 0.0004) {
