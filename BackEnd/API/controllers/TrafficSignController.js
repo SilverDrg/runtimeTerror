@@ -58,6 +58,10 @@ module.exports = {
     atLocation: function (req, res) {
         var latitude = req.params.latitude;
         var longitude = req.params.longditude;
+
+        console.log("Latitude: " + latitude);
+        console.log("Longitude: " + longitude);
+        
         var closestLocation = null;
         var nearest = 360;
 
