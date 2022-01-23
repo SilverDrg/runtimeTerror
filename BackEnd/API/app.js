@@ -6,7 +6,7 @@ var logger = require('morgan');
 var cors = require('cors');
 
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://127.0.0.1/projektnaNaloga';
+var mongoDB = 'mongodb://mongo:27017/projektnaNaloga';
 mongoDB = process.env.MONGO_URI;
 mongoose.connect(mongoDB, {useNewUrlParser: true});
 mongoose.Promise = global.Promise;
