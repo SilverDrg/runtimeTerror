@@ -27,7 +27,7 @@ const {parentPort, workerData, threadId} = require("worker_threads");
         console.log('lat and long: ' + latitude + ' ' + longditude);
 
         // Send location data as json
-        axios.post('http://localhost:3001/gps', {
+        axios.post('http://20.203.144.23:3001/gps', {
                 'latitude': latitude,
                 'longditude': longditude,
                 'altitude': 0,
@@ -53,7 +53,7 @@ const {parentPort, workerData, threadId} = require("worker_threads");
         })
 
         // Send the image path to mongoDB
-        axios.post('http://localhost:3001/camera/cam', {
+        axios.post('http://20.203.144.23:3001/camera/cam', {
                 'filepath': savepath,
                 'location_id': locData._id,
                 'link': urls[link]
