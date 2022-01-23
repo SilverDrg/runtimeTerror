@@ -72,7 +72,6 @@ module.exports = {
         var locations = []; // GPS objects
         var distances = []; // Distance of each object from original coords
 
-        console.log("find 1");
         console.log("latitude: " +latitude);
         console.log("longitude: " +longitude);
 
@@ -84,8 +83,6 @@ module.exports = {
                 }))
             }
 
-            console.log("find 2");
-
             GpsModel.findOne({latitude: { $lte : latitude }, longditude: { $gt : longitude }}, function (err2, location2) {
                 if (err2) {
                     console.log( JSON.stringify({
@@ -93,8 +90,6 @@ module.exports = {
                         error: err2
                     }))
                 }
-
-                console.log("find 3");
 
                 GpsModel.findOne({latitude: { $gt : latitude }, longditude: { $lte : longitude }}, function (err3, location3) {
                     if (err3) {
@@ -104,8 +99,6 @@ module.exports = {
                         }))
                     }
 
-                    console.log("find 4");
-
                     GpsModel.findOne({latitude: { $gt : latitude }, longditude: { $gt : longitude }}, function (err4, location4) {
                         if (err4) {
                             console.log( JSON.stringify({
@@ -113,8 +106,6 @@ module.exports = {
                                 error: err4
                             }))
                         }
-
-                        console.log("found all 4");
 
                         if (!location1) {
                             console.log('No such GPS bottomLeftQuadron');
@@ -156,10 +147,7 @@ module.exports = {
                             distances[3] = Math.sqrt(Math.pow(topRightQuadron.latitude - latitude, 2) + Math.pow(topRightQuadron.longditude - longitude, 2));
                         }
 
-                        //dist = sqrt((x2-x1)^2 + (y2-y1)^2)
-
-                        console.log("find closest");
-                    
+                        //dist = sqrt((x2-x1)^2 + (y2-y1)^2)                    
                         for (let index = 0; index < distances.length; index++) {
                             if (!distances[index] && nearest > distances[index] && distances[index] < 0.0004) {
                                 nearest = distances[index];
@@ -191,7 +179,7 @@ module.exports = {
                                     });
                                 }
                 
-                                return res.json({ carNumber: Cars.numberOfCars, latitude: closestLocation.latitude, longitude: closestLocation.longditude });  
+                                return res.json({ carNumber: Cars.numberOfCars, latitude: closestLocation.latitude.replace(/./g, ','), longitude: closestLocation.longditude.replace(/./g, ',') });  
                             }).populate('location').exec();
                         }
                     });
