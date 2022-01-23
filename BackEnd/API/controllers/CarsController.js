@@ -74,42 +74,42 @@ module.exports = {
         console.log("longitude: " +longitude);
 
         GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $lte: longitude }}, function (err1, location1) {
-            // if (err1) {
-            //     return res.status(500).json({
-            //         message: 'Error when getting GPS bottomLeftQuadron.',
-            //         error: err1
-            //     });
-            // }
+            if (err1) {
+                console.log( res.status(500).json({
+                    message: 'Error when getting GPS bottomLeftQuadron.',
+                    error: err1
+                }))
+            }
 
             console.log("find 2");
 
             GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $gt: longitude }}, function (err2, location2) {
-                // if (err2) {
-                //     return res.status(500).json({
-                //         message: 'Error when getting GPS bottomRightQuadron.',
-                //         error: err2
-                //     });
-                // }
+                if (err2) {
+                    console.log( res.status(500).json({
+                        message: 'Error when getting GPS bottomLeftQuadron.',
+                        error: err2
+                    }))
+                }
 
                 console.log("find 3");
 
                 GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $lte: longitude }}, function (err3, location3) {
-                    // if (err3) {
-                    //     return res.status(500).json({
-                    //         message: 'Error when getting GPS topLeftQuadron.',
-                    //         error: err3
-                    //     });
-                    // }
+                    if (err3) {
+                        console.log( res.status(500).json({
+                            message: 'Error when getting GPS bottomLeftQuadron.',
+                            error: err3
+                        }))
+                    }
 
                     console.log("find 4");
 
                     GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $gt: longitude }}, function (err4, location4) {
-                        // if (err4) {
-                        //     return res.status(500).json({
-                        //         message: 'Error when getting GPS topRightQuadron.',
-                        //         error: err4
-                        //     });
-                        // }
+                        if (err4) {
+                            console.log( res.status(500).json({
+                                message: 'Error when getting GPS bottomLeftQuadron.',
+                                error: err4
+                            }))
+                        }
 
                         console.log("found all 4");
 
@@ -166,7 +166,11 @@ module.exports = {
                 
                         console.log(closestLocation);
                         if (!closestLocation) {
-                            return res.json("None");
+                            return res.json({
+                                carNumber: '0',
+                                latitude: '0',
+                                longditude: '0'
+                            });
                         } else {
                             CarsModel.findOne({location: closestLocation._id}, function (err, Cars) {
                                 if (err) {
