@@ -75,7 +75,7 @@ module.exports = {
 
         GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $lte: longitude }}, function (err1, location1) {
             if (err1) {
-                console.log( res.status(500).json({
+                console.log( JSON.stringify({
                     message: 'Error when getting GPS bottomLeftQuadron.',
                     error: err1
                 }))
@@ -85,7 +85,7 @@ module.exports = {
 
             GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $gt: longitude }}, function (err2, location2) {
                 if (err2) {
-                    console.log( res.status(500).json({
+                    console.log( JSON.stringify({
                         message: 'Error when getting GPS bottomLeftQuadron.',
                         error: err2
                     }))
@@ -95,7 +95,7 @@ module.exports = {
 
                 GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $lte: longitude }}, function (err3, location3) {
                     if (err3) {
-                        console.log( res.status(500).json({
+                        console.log( JSON.stringify({
                             message: 'Error when getting GPS bottomLeftQuadron.',
                             error: err3
                         }))
@@ -105,7 +105,7 @@ module.exports = {
 
                     GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $gt: longitude }}, function (err4, location4) {
                         if (err4) {
-                            console.log( res.status(500).json({
+                            console.log( JSON.stringify({
                                 message: 'Error when getting GPS bottomLeftQuadron.',
                                 error: err4
                             }))
