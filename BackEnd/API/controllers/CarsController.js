@@ -69,6 +69,8 @@ module.exports = {
         var locations = []; // GPS objects
         var distances = []; // Distance of each object from original coords
 
+        consol.log("find 1");
+
         GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $lte: longitude }}, function (err1, location1) {
             if (err1) {
                 return res.status(500).json({
@@ -76,6 +78,8 @@ module.exports = {
                     error: err1
                 });
             }
+
+            consol.log("find 2");
 
             GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $gt: longitude }}, function (err2, location2) {
                 if (err2) {
@@ -85,6 +89,8 @@ module.exports = {
                     });
                 }
 
+                consol.log("find 3");
+
                 GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $lte: longitude }}, function (err3, location3) {
                     if (err3) {
                         return res.status(500).json({
@@ -93,6 +99,8 @@ module.exports = {
                         });
                     }
 
+                    consol.log("find 4");
+
                     GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $gt: longitude }}, function (err4, location4) {
                         if (err4) {
                             return res.status(500).json({
@@ -100,6 +108,8 @@ module.exports = {
                                 error: err4
                             });
                         }
+
+                        consol.log("found all 4");
 
                         if (!location1) {
                             console.log('No such GPS bottomLeftQuadron');
@@ -142,6 +152,8 @@ module.exports = {
                         }
 
                         //dist = sqrt((x2-x1)^2 + (y2-y1)^2)
+
+                        consol.log("find closest");
                     
                         for (let index = 0; index < distances.length; index++) {
                             if (!distances[index] && nearest > distances[index] && distances[index] < 0.0004) {
