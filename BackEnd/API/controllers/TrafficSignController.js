@@ -66,10 +66,13 @@ module.exports = {
         var topLeftQuadron = null;
         var topRightQuadron = null;
 
+        latitude = latitude.replace(/,/g, '.');
+        longitude = longitude.replace(/,/g, '.');
+
         var locations = []; // GPS objects
         var distances = []; // Distance of each object from original coords
 
-        GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $lte: longitude }}, function (err1, location1) {
+        GpsModel.findOne({latitude: { $lte : latitude }, longditude: { $lte : longitude }}, function (err1, location1) {
             if (err1) {
                 console.log( JSON.stringify({
                     message: 'Error when getting GPS bottomLeftQuadron.',
@@ -79,7 +82,7 @@ module.exports = {
 
             console.log("find 2");
 
-            GpsModel.findOne({latitude: { $lte: latitude }, longditude: { $gt: longitude }}, function (err2, location2) {
+            GpsModel.findOne({latitude: { $lte : latitude }, longditude: { $gt : longitude }}, function (err2, location2) {
                 if (err2) {
                     console.log( JSON.stringify({
                         message: 'Error when getting GPS bottomLeftQuadron.',
@@ -89,7 +92,7 @@ module.exports = {
 
                 console.log("find 3");
 
-                GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $lte: longitude }}, function (err3, location3) {
+                GpsModel.findOne({latitude: { $gt : latitude }, longditude: { $lte : longitude }}, function (err3, location3) {
                     if (err3) {
                         console.log( JSON.stringify({
                             message: 'Error when getting GPS bottomLeftQuadron.',
@@ -99,7 +102,7 @@ module.exports = {
 
                     console.log("find 4");
 
-                    GpsModel.findOne({latitude: { $gt: latitude }, longditude: { $gt: longitude }}, function (err4, location4) {
+                    GpsModel.findOne({latitude: { $gt : latitude }, longditude: { $gt : longitude }}, function (err4, location4) {
                         if (err4) {
                             console.log( JSON.stringify({
                                 message: 'Error when getting GPS bottomLeftQuadron.',
