@@ -161,7 +161,7 @@ module.exports = {
                             }
                         }
                 
-                        console.log(closestLocation);
+                        //console.log(closestLocation);
                         if (!closestLocation) {
                             return res.json({
                                 carNumber: '0',
