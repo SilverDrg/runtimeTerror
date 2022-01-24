@@ -156,6 +156,9 @@ module.exports = {
                         }
                 
                         console.log(closestLocation);
+                        while(!closestLocation) {
+                            console.log("waiting...");
+                        }
                         if (!closestLocation) {
                             return res.json({
                                 carNumber: '0',
