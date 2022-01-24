@@ -182,10 +182,10 @@ module.exports = {
                                 return res.json({ carNumber: Cars.numberOfCars, latitude: closestLocation.latitude.replace(/./g, ','), longitude: closestLocation.longditude.replace(/./g, ',') });  
                             }).populate('location').exec();
                         }
-                    }).limit(1).exec();
-                }).limit(1).exec();
-            }).limit(1).exec();
-        }).limit(1).exec();
+                    }).limit(1);
+                }).limit(1);
+            }).limit(1);
+        }).limit(1);
     },
 
     /**
