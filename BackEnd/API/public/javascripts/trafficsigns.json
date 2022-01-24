@@ -1,0 +1,181 @@
+[{
+    "_id": {
+      "$oid": "6098ee7684854198b0352d42"
+    },
+    "symbol": "Stop",
+    "location": {
+      "$oid": "60969a1c3bbc8533084f789e"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78e2dfe3c87d98aa60c8"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee8484854198b0352d43"
+    },
+    "symbol": "90",
+    "location": {
+      "$oid": "6098ed9284854198b0352d3d"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78ecdfe3c87d98aa60c9"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee9184854198b0352d44"
+    },
+    "symbol": "60",
+    "location": {
+      "$oid": "6098edce84854198b0352d3e"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78f4dfe3c87d98aa60ca"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee7684854198b0352001"
+    },
+    "symbol": "FreezingRoad",
+    "location": {
+      "$oid": "60969a1c3bbc8533084f7001"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78e2dfe3c87d98aa60c8"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee8484854198b0352002" 
+    },
+    "symbol": "RoundAbout",
+    "location": {
+      "$oid": "6098ed9284854198b0352002"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78ecdfe3c87d98aa60c9"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee9184854198b0352003" 
+    },
+    "symbol": "MainRoad",
+    "location": {
+      "$oid": "6098edce84854198b0352003"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78f4dfe3c87d98aa60ca"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee7684854198b0352004" 
+    },
+    "symbol": "Yield",
+    "location": {
+      "$oid": "60969a1c3bbc8533084f7004"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78e2dfe3c87d98aa60c8"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee8484854198b0352005" 
+    },
+    "symbol": "MainRoad",
+    "location": {
+      "$oid": "6098ed9284854198b0352005"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78ecdfe3c87d98aa60c9"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee9184854198b0352006" 
+    },
+    "symbol": "Yield",
+    "location": {
+      "$oid": "6098edce84854198b0352006"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78f4dfe3c87d98aa60ca"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee7684854198b0352007" 
+    },
+    "symbol": "Stop",
+    "location": {
+      "$oid": "60969a1c3bbc8533084f7007"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78e2dfe3c87d98aa60c8"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee8484854198b0352008" 
+    },
+    "symbol": "Stop",
+    "location": {
+      "$oid": "6098ed9284854198b0352008"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78ecdfe3c87d98aa60c9"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee9184854198b0352009" 
+    },
+    "symbol": "Yield",
+    "location": {
+      "$oid": "6098edce84854198b0352009"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78f4dfe3c87d98aa60ca"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee7684854198b0352010" 
+    },
+    "symbol": "NoEntry",
+    "location": {
+      "$oid": "60969a1c3bbc8533084f7010"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78e2dfe3c87d98aa60c8"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee8484854198b0352011" 
+    },
+    "symbol": "ArrowUp",
+    "location": {
+      "$oid": "6098ed9284854198b0352011"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78ecdfe3c87d98aa60c9"
+    }
+  },{
+    "_id": {
+      "$oid": "6098ee9184854198b0352012" 
+    },
+    "symbol": "Yield",
+    "location": {
+      "$oid": "6098edce84854198b0352012"
+    },
+    "__v": 0,
+    "image": {
+      "$oid": "60af78f4dfe3c87d98aa60ca"
+    }
+  }]
