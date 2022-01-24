@@ -75,7 +75,7 @@ module.exports = {
         console.log("latitude: " +latitude);
         console.log("longitude: " +longitude);
 
-        GpsModel.find({latitude: { $lte : latitude }, longditude: { $lte : longitude }}, function (err1, location1) {
+        GpsModel.findOne({latitude: { $lte : latitude }, longditude: { $lte : longitude }}, function (err1, location1) {
             if (err1) {
                 console.log( JSON.stringify({
                     message: 'Error when getting GPS bottomLeftQuadron.',
@@ -83,7 +83,7 @@ module.exports = {
                 }))
             }
 
-            GpsModel.find({latitude: { $lte : latitude }, longditude: { $gt : longitude }}, function (err2, location2) {
+            GpsModel.findOne({latitude: { $lte : latitude }, longditude: { $gt : longitude }}, function (err2, location2) {
                 if (err2) {
                     console.log( JSON.stringify({
                         message: 'Error when getting GPS bottomLeftQuadron.',
@@ -91,7 +91,7 @@ module.exports = {
                     }))
                 }
 
-                GpsModel.find({latitude: { $gt : latitude }, longditude: { $lte : longitude }}, function (err3, location3) {
+                GpsModel.findOne({latitude: { $gt : latitude }, longditude: { $lte : longitude }}, function (err3, location3) {
                     if (err3) {
                         console.log( JSON.stringify({
                             message: 'Error when getting GPS bottomLeftQuadron.',
@@ -99,7 +99,7 @@ module.exports = {
                         }))
                     }
 
-                    GpsModel.find({latitude: { $gt : latitude }, longditude: { $gt : longitude }}, function (err4, location4) {
+                    GpsModel.findOne({latitude: { $gt : latitude }, longditude: { $gt : longitude }}, function (err4, location4) {
                         if (err4) {
                             console.log( JSON.stringify({
                                 message: 'Error when getting GPS bottomLeftQuadron.',
@@ -112,6 +112,7 @@ module.exports = {
                             locations[0] = null;
                             distances[0] = 360;
                         } else {
+                            console.log("BottomLeft");
                             bottomLeftQuadron = location1;
                             locations[0] = bottomLeftQuadron;
                             distances[0] = Math.sqrt(Math.pow(bottomLeftQuadron.latitude - latitude, 2) + Math.pow(bottomLeftQuadron.longditude - longitude, 2));
@@ -122,6 +123,7 @@ module.exports = {
                             locations[1] = null;
                             distances[1] = 360;
                         } else {
+                            console.log("BottomRight");
                             bottomRightQuadron = location2;
                             locations[1] = bottomRightQuadron;
                             distances[1] = Math.sqrt(Math.pow(bottomRightQuadron.latitude - latitude, 2) + Math.pow(bottomRightQuadron.longditude - longitude, 2));
@@ -132,6 +134,7 @@ module.exports = {
                             locations[2] = null;
                             distances[2] = 360;
                         } else {
+                            console.log("TopLeft");
                             topLeftQuadron = location3;
                             locations[2] = topLeftQuadron;
                             distances[2] = Math.sqrt(Math.pow(topLeftQuadron.latitude - latitude, 2) + Math.pow(topLeftQuadron.longditude - longitude, 2));
@@ -142,6 +145,7 @@ module.exports = {
                             locations[3] = null;
                             distances[3] = 360;
                         } else {
+                            console.log("TopRight");
                             topRightQuadron = location4;
                             locations[3] = topRightQuadron;
                             distances[3] = Math.sqrt(Math.pow(topRightQuadron.latitude - latitude, 2) + Math.pow(topRightQuadron.longditude - longitude, 2));
@@ -149,16 +153,13 @@ module.exports = {
 
                         //dist = sqrt((x2-x1)^2 + (y2-y1)^2)                    
                         for (let index = 0; index < distances.length; index++) {
-                            if (!distances[index] && nearest > distances[index] && distances[index] < 0.04) {
+                            if (!distances[index] && nearest > distances[index] /*&& distances[index] < 0.04*/) {
                                 nearest = distances[index];
                                 closestLocation = locations[index];
                             }
                         }
                 
                         console.log(closestLocation);
-                        while(!closestLocation) {
-                            console.log("waiting...");
-                        }
                         if (!closestLocation) {
                             return res.json({
                                 carNumber: '0',
@@ -185,10 +186,10 @@ module.exports = {
                                 return res.json({ carNumber: Cars.numberOfCars, latitude: closestLocation.latitude.replace(/./g, ','), longitude: closestLocation.longditude.replace(/./g, ',') });  
                             }).populate('location').exec();
                         }
-                    }).limit(1);
-                }).limit(1);
-            }).limit(1);
-        }).limit(1);
+                    });
+                });
+            });
+        });
     },
 
     /**
