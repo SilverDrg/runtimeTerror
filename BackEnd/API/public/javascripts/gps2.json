@@ -1,0 +1,121 @@
+[{
+    "_id": {
+      "$oid": "60969a1c3bbc8533084f7001"
+    },
+    "latitude": 46.562833, 
+    "longditude": 15.626186,
+    "altitude": 10.0343278,
+    "speed": 40,
+    "accuracy": 90,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ed9284854198b0352002"
+    },
+    "latitude": 46.563047,
+    "longditude": 15.628139,
+    "altitude": 46.5607959327314,
+    "speed": 80,
+    "accuracy": 85,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098edce84854198b0352003"
+    },
+    "latitude": 46.5626365,
+    "longditude": 15.6298195,
+    "altitude": 46.539198447006484,
+    "speed": 60,
+    "accuracy": 95,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "60969a1c3bbc8533084f7004"
+    },
+    "latitude": 46.562488, 
+    "longditude": 15.6301116,
+    "altitude": 10.0343278,
+    "speed": 40,
+    "accuracy": 90,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ed9284854198b0352005"
+    },
+    "latitude": 46.5625634,
+    "longditude": 15.6303984,
+    "altitude": 46.5607959327314,
+    "speed": 80,
+    "accuracy": 85,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098edce84854198b0352006"
+    },
+    "latitude": 46.5624105,
+    "longditude": 15.6312253,
+    "altitude": 46.539198447006484,
+    "speed": 60,
+    "accuracy": 95,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "60969a1c3bbc8533084f7007"
+    },
+    "latitude": 46.5616984,
+    "longditude": 15.6298564,
+    "altitude": 10.0343278,
+    "speed": 40,
+    "accuracy": 90,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ed9284854198b0352008"
+    },
+    "latitude": 46.5607623,
+    "longditude": 15.6335035,
+    "altitude": 46.5607959327314,
+    "speed": 80,
+    "accuracy": 85,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098edce84854198b0352009"
+    },
+    "latitude": 46.5599201,
+    "longditude": 15.6378989,
+    "altitude": 46.539198447006484,
+    "speed": 60,
+    "accuracy": 95,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "60969a1c3bbc8533084f7010"
+    },
+    "latitude": 46.5598613,
+    "longditude": 15.6381779,
+    "altitude": 10.0343278,
+    "speed": 40,
+    "accuracy": 90,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ed9284854198b0352011"
+    },
+    "latitude": 46.5591106,
+    "longditude": 15.6415512,
+    "altitude": 46.5607959327314,
+    "speed": 80,
+    "accuracy": 85,
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098edce84854198b0352012"
+    },
+    "latitude": 46.5589878,
+    "longditude": 15.6377706,
+    "altitude": 46.539198447006484,
+    "speed": 60,
+    "accuracy": 95,
+    "__v": 0
+  }]

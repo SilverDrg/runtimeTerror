@@ -1,0 +1,157 @@
+[{
+    "_id": {
+      "$oid": "6098ef5584854198b0352001"
+    },
+    "numberOfCars": 3,
+    "averageSpeed": 90,
+    "location": {
+      "$oid": "60969a1c3bbc8533084f7001"
+    },
+    "imageSource": {
+      "$oid": "6098ec3984854198b0352d39"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef7084854198b0352002"
+    },
+    "numberOfCars": 2,
+    "averageSpeed": 110,
+    "location": {
+      "$oid": "6098ed9284854198b0352002"
+    },
+    "imageSource": {
+      "$oid": "6098ec5784854198b0352d3b"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef8784854198b0352003"
+    },
+    "numberOfCars": 1,
+    "averageSpeed": 140,
+    "location": {
+      "$oid": "6098edce84854198b0352003"
+    },
+    "imageSource": {
+      "$oid": "6098ec5c84854198b0352d3c"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef5584854198b0352004"
+    },
+    "numberOfCars": 3,
+    "averageSpeed": 90,
+    "location": {
+      "$oid": "60969a1c3bbc8533084f7004"
+    },
+    "imageSource": {
+      "$oid": "6098ec3984854198b0352d39"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef7084854198b0352005"
+    },
+    "numberOfCars": 2,
+    "averageSpeed": 110,
+    "location": {
+      "$oid": "6098ed9284854198b0352005"
+    },
+    "imageSource": {
+      "$oid": "6098ec5784854198b0352d3b"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef8784854198b0352006"
+    },
+    "numberOfCars": 1,
+    "averageSpeed": 140,
+    "location": {
+      "$oid": "6098edce84854198b0352006"
+    },
+    "imageSource": {
+      "$oid": "6098ec5c84854198b0352d3c"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef5584854198b0352007"
+    },
+    "numberOfCars": 3,
+    "averageSpeed": 90,
+    "location": {
+      "$oid": "60969a1c3bbc8533084f7007"
+    },
+    "imageSource": {
+      "$oid": "6098ec3984854198b0352d39"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef7084854198b0352008"
+    },
+    "numberOfCars": 2,
+    "averageSpeed": 110,
+    "location": {
+      "$oid": "6098ed9284854198b0352008"
+    },
+    "imageSource": {
+      "$oid": "6098ec5784854198b0352d3b"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef8784854198b0352009"
+    },
+    "numberOfCars": 1,
+    "averageSpeed": 140,
+    "location": {
+      "$oid": "6098edce84854198b0352009"
+    },
+    "imageSource": {
+      "$oid": "6098ec5c84854198b0352d3c"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef5584854198b0352010"
+    },
+    "numberOfCars": 3,
+    "averageSpeed": 90,
+    "location": {
+      "$oid": "60969a1c3bbc8533084f7010"
+    },
+    "imageSource": {
+      "$oid": "6098ec3984854198b0352d39"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef7084854198b0352011"
+    },
+    "numberOfCars": 2,
+    "averageSpeed": 110,
+    "location": {
+      "$oid": "6098ed9284854198b0352011"
+    },
+    "imageSource": {
+      "$oid": "6098ec5784854198b0352d3b"
+    },
+    "__v": 0
+  },{
+    "_id": {
+      "$oid": "6098ef8784854198b0352012"
+    },
+    "numberOfCars": 1,
+    "averageSpeed": 140,
+    "location": {
+      "$oid": "6098edce84854198b0352012"
+    },
+    "imageSource": {
+      "$oid": "6098ec5c84854198b0352d3c"
+    },
+    "__v": 0
+  }]
