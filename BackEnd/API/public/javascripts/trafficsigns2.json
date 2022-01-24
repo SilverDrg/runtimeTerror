@@ -134,7 +134,7 @@
     "_id": {
       "$oid": "6098ee9184854198b0352012" 
     },
-    "symbol": "Yield",
+    "symbol": "Danger",
     "location": {
       "$oid": "6098edce84854198b0352012"
     },
