@@ -185,7 +185,7 @@ module.exports = {
                                     });
                                 }
                 
-                                return res.json({ carNumber: Cars.numberOfCars, latitude: closestLocation.latitude.replace(/./g, ','), longitude: closestLocation.longditude.replace(/./g, ',') });  
+                                return res.json({ carNumber: Cars.numberOfCars, latitude: closestLocation.latitude, longitude: closestLocation.longditude });  
                             }).populate('location').exec();
                         }
                     });
