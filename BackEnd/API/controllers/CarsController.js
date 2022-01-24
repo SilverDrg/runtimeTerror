@@ -75,7 +75,7 @@ module.exports = {
         console.log("latitude: " +latitude);
         console.log("longitude: " +longitude);
 
-        GpsModel.findOne({latitude: { $lte : latitude }, longditude: { $lte : longitude }}, function (err1, location1) {
+        GpsModel.find({latitude: { $lte : latitude }, longditude: { $lte : longitude }}, function (err1, location1) {
             if (err1) {
                 console.log( JSON.stringify({
                     message: 'Error when getting GPS bottomLeftQuadron.',
@@ -83,7 +83,7 @@ module.exports = {
                 }))
             }
 
-            GpsModel.findOne({latitude: { $lte : latitude }, longditude: { $gt : longitude }}, function (err2, location2) {
+            GpsModel.find({latitude: { $lte : latitude }, longditude: { $gt : longitude }}, function (err2, location2) {
                 if (err2) {
                     console.log( JSON.stringify({
                         message: 'Error when getting GPS bottomLeftQuadron.',
@@ -91,7 +91,7 @@ module.exports = {
                     }))
                 }
 
-                GpsModel.findOne({latitude: { $gt : latitude }, longditude: { $lte : longitude }}, function (err3, location3) {
+                GpsModel.find({latitude: { $gt : latitude }, longditude: { $lte : longitude }}, function (err3, location3) {
                     if (err3) {
                         console.log( JSON.stringify({
                             message: 'Error when getting GPS bottomLeftQuadron.',
@@ -99,7 +99,7 @@ module.exports = {
                         }))
                     }
 
-                    GpsModel.findOne({latitude: { $gt : latitude }, longditude: { $gt : longitude }}, function (err4, location4) {
+                    GpsModel.find({latitude: { $gt : latitude }, longditude: { $gt : longitude }}, function (err4, location4) {
                         if (err4) {
                             console.log( JSON.stringify({
                                 message: 'Error when getting GPS bottomLeftQuadron.',
@@ -182,10 +182,10 @@ module.exports = {
                                 return res.json({ carNumber: Cars.numberOfCars, latitude: closestLocation.latitude.replace(/./g, ','), longitude: closestLocation.longditude.replace(/./g, ',') });  
                             }).populate('location').exec();
                         }
-                    });
-                });
-            });
-        });
+                    }).limit(1).exec();
+                }).limit(1).exec();
+            }).limit(1).exec();
+        }).limit(1).exec();
     },
 
     /**
