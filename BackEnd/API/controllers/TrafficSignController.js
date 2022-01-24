@@ -145,11 +145,13 @@ module.exports = {
                         }
 
                         //dist = sqrt((x2-x1)^2 + (y2-y1)^2)
-                    
                         for (let index = 0; index < distances.length; index++) {
+                            console.log("checking distance: " + distances[index] + " at index: " + index);
                             if (distances[index] && nearest > distances[index] /*&& distances[index] < 0.04*/) {
                                 nearest = distances[index];
                                 closestLocation = locations[index];
+                                console.log("closes distance: " + nearest);
+                                console.log("closest location: " + closestLocation);
                             }
                         }
                 
